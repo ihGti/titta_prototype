@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* common.cssは絶対に触らない！！！！！！！！！！！ */
+
+/* sample.cssをコピーし複製 */
+/* ファイル名はhtmlと同じ名前にしてください */
+
+
+/* sample.htmlにlinkタグがコメントアウトしてあるので良ければ使ってください */
+
+
+/*sample.html*/
+/*例*/
+#m-sample div.wrap div#login-form{
+  width: 400px;
+  height: 500px;
+  background-color: #363a58;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+#m-sample div.wrap div#login-form form{
+  height: 300px;
+  margin: 50px auto 0 80px;
+  color: #fff;
+}
+
+#m-sample div.wrap div#login-form form h1{
+  font-size: 2.5rem;
+}
+
+#m-sample div.wrap div#login-form form label p{
+  margin: 50px 0 0 0;
+}
+
+#m-sample div.wrap div#login-form form input{
+  width: 250px;
+}
+
+#m-sample div.wrap div#login-form form input#bottun{
+  height: 30px;
+  margin: 50px 0 0 0;
+  cursor: pointer;
+}
+
+/* 会員登録へのリンク設定 */
+#m-sample div.wrap a{
+  display: inline-block;
+  color: white;
+  margin: 30px 0 0 150px;
+}
+
+
+/* 縦線 */
+#m-sample div.wrap div#vartical-line{
+  width: 2px;
+  height: 93vh;
+  background-color: black;
+  margin: -20px 0 0 10px;
+}
+
+
+/* 画像設定 */
+#m-sample div.wrap div#site-image figure img{
+  width: 600px;
+  height: auto;
+  margin-top: 100px;
+}
+
+
+
+

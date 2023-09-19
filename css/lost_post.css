@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* common.cssは絶対に触らない！！！！！！！！！！！ */
+
+/* sample.cssをコピーし複製 */
+/* ファイル名はhtmlと同じ名前にしてください */
+
+
+/* sample.htmlにlinkタグがコメントアウトしてあるので良ければ使ってください */
+
+
+
+
+/*m-lost_post.html*/
+/*#m-lost_post*/
+div.wrap{
+/*  height: 1000px;*/
+}
+
+#m-lost_post div.p_detail-heading{
+/*  height: 100px;*/
+  width: 1100px;
+  margin: 0 auto 0 auto;
+  padding: 20px 0px 20px 0px ;
+/*  background-color: #ddddff;*/
+}
+div.p_detail-heading p{
+  padding: 5px 0 5px 0;
+}
+div.p_detail-heading p a{
+  text-decoration: none;
+  color: #000;/*仮*/
+}
+div.p_detail-heading p#p-id{
+  margin: 30px 0 30px 0;
+  padding: 10px 0 10px 0;
+  border-top: 1px #ddd solid;
+  border-bottom: 1px #ddd solid;
+}
+
+
+
+
+/*wrap*/
+div.p-detail-wrap{
+  margin: 0 auto 0 auto;
+  display: flex;
+}
+
+
+/*left*/
+div.p-detail-wrap div.p-detail_left{
+  width: 800px;
+/*  background-color: #ddffdd;*/
+  display: inline-block;
+}
+div.p-detail-wrap div.p-detail_left h2{
+  padding: 3px 0 0 3px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border-left: 4px #F1B2B2 solid;
+}
+div.post-img{
+  text-align: center;
+}
+div.post-img figure img{
+  width: 500px;
+  display: inline-block;
+}
+
+/*基本情報～詳細情報*/
+div.p-detail-wrap div.p-detail_left h3{
+  padding: 50px 0 0 0 ;
+}
+
+/*tableのcss*/
+div.p-detail-wrap div.p-detail_left table{
+  width: 680px;
+  margin: 0 0 30px 0 ;
+  border: 1px #ddd solid;
+}
+div.p-detail-wrap div.p-detail_left table tr{}
+div.p-detail-wrap div.p-detail_left table tr th{
+  width: 150px;
+  padding: 15px 15px 15px 15px ;
+  color: #fff;
+  background-color: #7D8BAE;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  border: 1px #ddd solid;
+
+}
+div.p-detail-wrap div.p-detail_left table tr td{
+  padding: 15px 15px 15px 15px ;
+  font-size: 0.8rem;
+  border: 1px #ddd solid;
+}
+
+
+
+
+/*right*/
+div.p-detail-wrap div.p-detail_right{
+  width: 300px;
+/*  background-color: #ffdddd;*/
+  display: inline-block;
+}
+
+div.p-detail-wrap div.p-detail_right p#pet-buttom{
+  margin: 20px auto 20px auto;
+  padding: 30px 30px 30px 30px;
+  width: 300px;
+  text-align: center;
+  background-color:#E5857B;
+  box-shadow: 5px 3px 3px #ddd;
+}
+div.p-detail-wrap div.p-detail_right p#pet-buttom a{
+  text-decoration: none;
+  color: #fff;
+}
+div.p-detail-wrap div.p-detail_right p#pet-buttom:hover{
+  opacity: 0.7;
+}
+div.p-detail-wrap div.p-detail_right p#font-small{
+  font-size:0.9rem;
+}
+
+div.p-detail-wrap div.p-detail_right div.inquiry-wrap{
+  margin: 30px 0 0px 0;
+  padding: 10px 10px 10px 10px ;
+  border: 1px #E5857B solid;
+}
+
+div.p-detail-wrap div.p-detail_right div.apply-wrap{
+    margin: 30px 0 0px 0;
+  padding: 10px 10px 10px 10px ;
+  border: 1px #ddd solid;
+}

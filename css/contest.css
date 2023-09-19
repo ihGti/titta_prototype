@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* common.cssは絶対に触らない！！！！！！！！！！！ */
+
+/* sample.cssをコピーし複製 */
+/* ファイル名はhtmlと同じ名前にしてください */
+
+
+/* sample.htmlにlinkタグがコメントアウトしてあるので良ければ使ってください */
+
+
+/*sample.html*/
+/*例*/
+#m-sample div.wrap p{
+/* 例として書いてあるだけなので消して大丈夫です */
+  color: #000;
+}
+
+
+#top{
+  max-width: 2000px;
+  max-height: 430px;
+  width: 100%;
+  background-color: red;
+}
+#topimg{
+  width: 100%;
+}
+
+#num{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  margin: 20px 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.num{
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  height: 70px;
+  background-color: #DBDDEA;
+  box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.5);
+}
+h2{
+  margin: 10px 0 0 0;
+  font-size: 1.5rem;
+}
+
+#item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.aitem{
+  width: 20%;
+  margin: 20px;
+  height: 300px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0 0 8px gray;
+  transition: .3s;
+}
+.aitem:hover{
+  transform: translateY(-4px);
+}
+.item figure{
+  padding: 15px 0 0 0;
+  background-color: #CB6CE6;
+}
+.item figure img{
+  width: 100%;
+}
+h3{
+  padding: 10px;
+}
