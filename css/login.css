@@ -40,31 +40,47 @@
 #m-sample div.wrap div#login-form form input#bottun{
   height: 30px;
   margin: 50px 0 0 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #363a58;
   cursor: pointer;
+  box-shadow: 5px 3px 3px #ddd;
+}
+
+
+#m-sample div.wrap div#login-form form input#bottun:hover{
+  background-color: #fff;
+  color: #000;
 }
 
 /* 会員登録へのリンク設定 */
 #m-sample div.wrap a{
   display: inline-block;
   color: white;
-  margin: 30px 0 0 150px;
+  margin: 30px 0 0 140px;
 }
 
 
 /* 縦線 */
 #m-sample div.wrap div#vartical-line{
-  width: 2px;
-  height: 93vh;
-  background-color: black;
+  width: 1px;
+  height: 100vh;
+  background-color: #ddd;
   margin: -20px 0 0 10px;
 }
 
 
 /* 画像設定 */
-#m-sample div.wrap div#site-image figure img{
+
+#m-sample div.wrap div#site-image figure{
   width: 600px;
+}
+
+#m-sample div.wrap div#site-image figure img{
+  width: 250px;
   height: auto;
-  margin-top: 100px;
+  margin: 180px 0 0 180px;
 }
 
 
