@@ -1,0 +1,578 @@
+@charset "utf-8";
+
+/* common.cssは絶対に触らない！！！！！！！！！！！ */
+
+/* sample.cssをコピーし複製 */
+/* ファイル名はhtmlと同じ名前にしてください */
+
+/* sample.htmlにlinkタグがコメントアウトしてあるので良ければ使ってください */
+
+/*sample.html*/
+/*例*/
+#m-sample div.wrap p {
+  /* 例として書いてあるだけなので消して大丈夫です */
+  color: #000;
+}
+
+/* Topページの着せ替え------------------ */
+section.index_M_sec1_1 {
+  width: 100%;
+  height: 695px;
+  /* background-image: url(../images/toppage_room.jpg); */
+  background-image: url(../images/toppage_room.jpg);
+  background-size: cover;
+  margin: 0 0 -100px 0;
+}
+
+/* 迷子掲示板フレーム */
+div.index_M_sec1_di_1 {
+  width: auto;
+  height: 308px;
+  background-color: #ff634700;
+  margin: 25px 0 0 0;
+}
+
+/* 注目コンテストフレーム */
+div.index_M_sec1_di_2 {
+  width: auto;
+  height: 308px;
+  background-color: #ff634700;
+  margin: 25px 0 0 0;
+}
+
+/* 迷子掲示板本体 */
+div.index_M_sec1_di_1_1 {
+  width: 250px;
+  height: 308px;
+  background-color: #41537d;
+  float: right;
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+/* 注目コンテスト本体 */
+div.index_M_secc1_di_2_1 {
+  width: 250px;
+  height: 308px;
+  background-color: #41537d;
+  float: left;
+  text-align: center;
+}
+
+/* 迷子鳥のフレーム */
+div.index_M_sec1_di_1_1 div {
+  width: 226px;
+  height: 256px;
+  background-color: #fefeff;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+/* 迷子鳥 */
+div.index_M_sec1_di_1_1 div img {
+  margin: 10px 0 20px 0;
+}
+
+/* コンテストタイトル */
+div.index_M_secc1_di_2_1 h1 {
+  font-size: 1.1rem;
+  margin: 35px 0 0 0;
+}
+
+/* コンテスト */
+div.index_M_secc1_di_2_1 img {
+  margin: 25px 0 0 0;
+}
+
+/* Topページ下部------------------ */
+section.index_M_sec2_1 {
+  width: 100%;
+  height: auto;
+  background-color: #ff7f5000;
+  margin: 170px 0 100px 0;
+}
+
+/* トップページ下部（フレックスBOX） */
+div.index_M_sec2_fl_1 {
+  width: 100%;
+  height: auto;
+  background-color: #ff634700;
+  display: flex;
+}
+
+/* トップページ下部（フレックス左） */
+div.index_M_sec2_di_1 {
+  width: 300px;
+  height: 100%;
+  background-color: #ff440000;
+  margin: 0 50px 0 0;
+}
+
+/* トップページ下部（フレックス右） */
+div.index_M_sec2_di_2 {
+  width: calc(100% - 300px);
+  height: 1167px;
+  background-color: #ff440000;
+}
+
+/* ログインボーナス */
+div.index_M_sec2_di_1 a#loginB {
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+  display: block;
+  background-image: url(../images/rogbo.jpg);
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+
+/* 検索BOX */
+div.index_M_sec2_di_1_1 {
+  width: 100%;
+  height: 322px;
+  background-color: #ff000000;
+  border: solid 1px #eee;
+  margin: 0 0 40px 0;
+}
+
+/* 絞り込み */
+div.index_M_sec2_di_1_1 h1 {
+  width: 100%;
+  height: 35px;
+  background-color: #dc143c00;
+  line-height: 35px;
+  padding: 0 0 0 20px;
+  border-bottom: solid 1px #ddd;
+}
+
+/* キーワードフレーム */
+div.index_M_sec2_di_1_1 > div {
+  width: 100%;
+  height: 60px;
+  background-color: #dc143c00;
+  border-bottom: solid 1px #ddd;
+  display: flex;
+}
+
+/* キーワード */
+div.index_M_sec2_di_1_1 div p {
+  width: 90px;
+  background-color: #c7158600;
+  text-align: center;
+  line-height: 64px;
+  margin-left: 15px;
+}
+
+div.index_M_sec2_di_1_1 div input {
+  width: 150px;
+  height: 30px;
+  margin: 13px 0 0 20px;
+}
+
+/* 除外キーワードフレーム */
+/* 上に同じ */
+
+/* カテゴリ */
+div.index_M_sec2_fl_1_1_3 p {
+  margin: 0 0 0 5px;
+}
+
+/* カテゴリ選択 */
+div.index_M_sec2_fl_1_1_3 form input {
+  width: 62px;
+}
+
+/* 価格 */
+div.index_M_sec2_fl_1_1_4 p {
+  width: 90px;
+  margin: 0 0 0 5px;
+}
+
+/* 価格入力のflexフレーム */
+div.index_M_sec2_fl_1_1_4 div {
+  width: 175px;
+  background-color: #c7158600;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ～ */
+div.index_M_sec2_fl_1_1_4 div p {
+  display: inline;
+  background-color: #ff149100;
+  font-size: 0.8rem;
+}
+
+/* 価格入力 */
+div.index_M_sec2_fl_1_1_4 div form input {
+  width: 48px;
+}
+
+/* 検索ボタン */
+div.index_M_sec2_fl_1 button {
+  width: 100px;
+  height: 35px;
+  margin: 4px 15px 0 0;
+  float: right;
+}
+
+/* Topページ下部（カテゴリ検索）------------------ */
+
+/* カテゴリ選択 */
+div.index_M_sec2_di_1_2 {
+  width: 100%;
+  height: auto;
+  background-color: #ff000000;
+  border: solid 1px #e5857b;
+  margin: 0 0 100px 0;
+}
+
+/* ペットから探す */
+div.index_M_sec2_di_1_2 h1 {
+  width: 100%;
+  height: 50px;
+  background-color: #e5857b;
+  line-height: 3.5em;
+  padding-left: 20px;
+}
+
+/* ペットから探す（項目） */
+div.index_M_sec2_di_1_2 nav {
+  width: 100%;
+  height: auto;
+  background-color: #dc143c00;
+}
+
+div.index_M_sec2_di_1_2 nav ul {
+}
+
+div.index_M_sec2_di_1_2 nav ul li {
+}
+
+/* 項目 */
+div.index_M_sec2_di_1_2 nav ul li a {
+  display: block;
+  width: calc(100% - 20px);
+  height: 50px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 3em;
+  text-decoration: none;
+  color: #000;
+  border-bottom: solid 1px #e5857b;
+  transition: 0.5s;
+}
+
+div.index_M_sec2_di_1_2 nav ul li a:hover {
+  background-color: #ffcfcf;
+}
+
+a.koukoku1 {
+  display: block;
+  width: 300px;
+  height: 600px;
+  background-image: url(../images/koukoku1.jpg);
+  background-size: cover;
+  margin: 0 0 100px 0;
+}
+
+a.koukoku2 {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: #e5857b;
+  background-image: url(../images/img2.jpg);
+  background-size: contain;
+}
+
+/* Topページ下部（イベント情報）------------------ */
+
+div.index_M_sec2_di_2 > div {
+  width: 810px;
+  height: auto;
+  background-color: #ff000000;
+  margin: 0 auto;
+}
+
+div.index_M_sec2_di_2 div h1 {
+  width: 810px;
+  font-size: 1.2rem;
+  background-color: #dc143c00;
+  padding: 10px 0 0 0;
+  margin: 0 auto 20px auto;
+}
+
+/* 写真入れるフレーム */
+div.index_M_sec2_di_2 div div {
+  width: 770px;
+  height: auto;
+  background-color: #dc143c00;
+  margin: 0 auto 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* イベント写真１ */
+div.index_M_sec2_di_2 div div a.event1_frame {
+  width: 370px;
+  height: 280px;
+  display: block;
+  background-image: url(../images/event2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* イベント写真２ */
+div.index_M_sec2_di_2 div div a.event2_frame {
+  width: 370px;
+  height: 280px;
+  display: block;
+  background-image: url(../images/event3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a.event1_frame,
+a.event2_frame {
+  transition: 0.5s;
+}
+
+a.event1_frame:hover,
+a.event2_frame:hover {
+  opacity: 0.5;
+}
+
+/* Topページ下部（ペットの種類から探す）------------------ */
+div.index_M_sec2_di_2 div.search_from_kinds_of_pet {
+  width: 810px;
+  height: auto;
+  background-color: #dc143c00;
+}
+
+/* 横に並べるようの箱 */
+div.search_from_kinds_of_pet div.kind_of_pets_flex {
+  width: 95%;
+  height: auto;
+  background-color: #c7158600;
+}
+
+/* お試し出品とはボタン */
+div.kind_of_pets_flex a {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+div.kind_of_pets_flex a:first-child {
+  background-image: url(../images/inu.jpg);
+  background-size: contain;
+}
+
+div.kind_of_pets_flex a:nth-child(2) {
+  background-image: url(../images/neko.jpg);
+  background-size: contain;
+}
+
+div.kind_of_pets_flex a:nth-child(3) {
+  background-image: url(../images/hamusuta-.jpg);
+  background-size: contain;
+}
+
+div.kind_of_pets_flex a:nth-child(4) {
+  background-image: url(../images/inko.jpg);
+  background-size: contain;
+}
+
+div.kind_of_pets_flex a:nth-child(5) {
+  background-image: url(../images/reopa.jpg);
+  background-size: contain;
+}
+
+div.kind_of_pets_flex a:nth-child(6) {
+  background-image: url(../images/kaeru.jpg);
+  background-size: contain;
+}
+
+div.kind_of_pets_flex a:nth-child(7) {
+  background-image: url(../images/hebi.jpg);
+  background-size: contain;
+}
+
+div.search_from_kinds_of_pet > a {
+  text-decoration: none;
+  float: right;
+  margin: -20px 20px 0 0;
+}
+
+div.index_M_sec2_di_2 div.tutorial_choice {
+  width: 810px;
+  height: auto;
+  background-color: #dc143c00;
+  margin: 70px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.tutorial_choice a:first-child {
+  display: block;
+  width: 390px;
+  height: 110px;
+  border-radius: 10px;
+  background-image: url(../images/3.png);
+  background-size: cover;
+  transition: 0.5s;Users/kazum/Downloads/初心者ガイド/2.png Users/kazum/Downloads/初心者ガイド/3.png
+}
+
+div.tutorial_choice a:first-child:hover {
+  opacity: 0.5;
+}
+
+div.tutorial_choice a:nth-child(2) {
+  display: block;
+  width: 390px;
+  height: 110px;
+  border-radius: 10px;
+  background-image: url(../images/2.png);
+  background-size: cover;
+  transition: 0.5s;
+}
+
+div.tutorial_choice a:nth-child(2):hover {
+  opacity: 0.5;
+}
+
+div.index_M_sec2_di_2 div.search_from_category_of_goods {
+  width: 810px;
+  height: auto;
+  background-color: #dc143c00;
+  margin: 50px auto 150px auto;
+}
+
+div.search_from_category_of_goods div.category_of_goods_flex {
+  width: 95%;
+  height: auto;
+  background-color: #c7158600;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.category_of_goods_flex a {
+  width: 160px;
+  height: 75px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+div.category_of_goods_flex a p {
+  font-size: 1rem;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #ff149100;
+  white-space: nowrap;
+}
+
+/* div.category_of_goods_flex a:first-child {
+  background-image: url(../images/geji.jpg);
+  background-size: cover;
+} */
+
+div.category_of_goods_flex a:first-child {
+  background-image: url(../images/geji.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(2) {
+  background-image: url(../images/esaire.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(3) {
+  background-image: url(../images/rido.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(4) {
+  background-image: url(../images/omocha.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(5) {
+  background-image: url(../images/caribag.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(6) {
+  background-image: url(../images/petkagu.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(7) {
+  background-image: url(../images/pettokozai.jpg);
+  background-size: cover;
+}
+
+div.category_of_goods_flex a:nth-child(8) {
+  background-image: url(../images/hoshitu.jpg);
+  background-size: cover;
+}
+
+div.search_from_category_of_goods > a {
+  text-decoration: none;
+  float: right;
+  margin: -20px 20px 0 0;
+}
+
+p.satooyabo {
+  width: 100%;
+  height: auto;
+  background-color: #ff7f5000;
+  border-left: solid 8px #e5857b;
+  font-size: 1.4rem;
+  padding-left: 10px;
+}
+
+div#satooya_flex {
+  width: 100%;
+  height: auto;
+  background-color: #e5867b00;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 70px 0;
+}
+
+div#satooya_flex a.satooyaboshuBox {
+  display: block;
+  width: auto;
+  height: 210px;
+  background-color: #fff8f700;
+  border: solid 0.5px #ddd;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+a.satooyaboshuBox:hover {
+  opacity: 0.5;
+}
+
+a.satooyaboshuBox div.satooyaoseru {
+  width: 160px;
+  height: 160px;
+  background-color: #41537d;
+  background-image: url(../images/neko.jpg);
+  background-size: contain;
+}
+
+a.satooyaboshuBox p.satooyasagasi_m {
+  text-decoration: none;
+}
+/* --------------------------------------- */
