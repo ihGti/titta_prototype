@@ -129,7 +129,11 @@ main {
 }
 div.wrap {
   width: 1200px;
+<<<<<<< HEAD
   height: 100%; /*とりまで2000pxにしてるだけ。あとで消す。*/
+=======
+  height: 100%;
+>>>>>>> 4f0b88ff4c2b6467713c3774bce3481bc0f33ae1
 
   /* ↓headerを中央揃え */
   margin: 0 auto 0 auto;
