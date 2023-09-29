@@ -49,7 +49,6 @@ div.p-detail-wrap{
 }
 
 
-/*left*/
 div.p-detail-wrap div.p-detail_left{
   width: 800px;
 /*  background-color: #ddffdd;*/
@@ -61,6 +60,8 @@ div.p-detail-wrap div.p-detail_left h2{
   font-weight: lighter;
   border-left: 4px #F1B2B2 solid;
 }
+
+/*left*/
 div.post-img{
   text-align: center;
 }
@@ -212,4 +213,142 @@ div.recruiter-wrap div#pro-msg p{
   /* padding: 0 3px 0 3px; */
   font-size: 0.9rem;
   line-height: 1.1rem;
+}
+
+
+
+
+/* 似たような条件の里親状況 */
+div.p-similar{
+  /*  height: 100px;*/
+  width: 1100px;
+  margin: 0 auto 0 auto;
+  padding: 20px 0px 20px 0px;
+  /*  background-color: #ddddff;*/
+}
+
+div.p-similar h2{
+    margin: 0 0 10px 0;
+    padding: 3px 0 0 3px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    border-left: 4px #F1B2B2 solid;
+}
+
+/* 掲示板div.postのdiv */
+div.similar-wrap{
+  width: 1100px;
+  margin: 0 auto 0 auto;
+  padding: 0 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* 掲示板投稿パーツ */
+div.post{
+  margin: 5px 5px 5px 5px ;
+  padding: 3px 12px 20px 12px;
+  width: 19%;
+  box-sizing: border-box;
+
+  border: 1px #ddd solid;
+  box-shadow: 2px 2px 6px #ddd;
+  
+}
+
+div.post a{
+  /* margin: 10px 10px 10px 10px ; */
+  /* padding: 10px 10px 10px 10px ; */
+  color: #000;
+  text-decoration: none;
+
+  display: block;
+  box-sizing: content-box;
+}
+div.post a:hover{
+  opacity: 0.6;
+}
+
+div.post a p#iine{
+  text-align: right;
+}
+div.post a input{
+  /*この３行は必要*/
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /*あったほうがいい*/
+  border: none;
+  background: none;
+  outline: none;
+  /*カーソル*/
+  cursor: pointer;
+
+
+
+  /*アイコンの色*/
+  color: #000;
+  /*  color: rgb(3, 14, 71);*/
+}
+div.post a input:hover {
+  color: #E5857B;
+  /* opacity: 0.8; */
+}
+
+
+
+div.post a figure{
+  margin: 0 0 20px 0;
+}
+
+div.post a figure img{
+  max-width: 100%;
+}
+div.post a h3{
+  margin: 0 0 3px 2px;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+div.post a p{
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}
+div.post a p#brbr{
+  padding: 1px 0 0 0 ;
+}
+
+div.post a p span{
+  margin: 0 5px 2px 0 ;
+  padding: 1px 9px 1px 9px ;
+  color: #fff;
+  background-color: #E5857B;
+  border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* p-similar */
+div.p-similar p {
+  padding: 5px 0 5px 0;
+}
+
+div.p-similar p a {
+  text-decoration: none;
+  color: #000;
+  /*仮*/
+}
+
+div.p-similar p a:hover {
+  opacity: 0.6;
 }
