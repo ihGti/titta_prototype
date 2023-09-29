@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
 
-    <link rel="stylesheet" type="text/css" href="css/lost_post.css">
+    <link rel="stylesheet" type="text/css" href="css/foster_post.css">
 
 
   </head>
@@ -125,6 +125,10 @@
 
             <div id="detail">
               <h2>里親募集ペットを登録</h2>
+              <p>
+                円滑な取引の為、1募集に対して掲載するペットは1匹にしてください。<br>
+                複数匹まとめて譲渡希望の場合は、譲渡条件に入力してください。
+              </p>
             </div>
 
 
@@ -210,55 +214,68 @@
                     <input type="text" class="textbox-001" placeholder=""/>
                   </td>
                 </tr>
-                <tr id="hogo">
-                  <td id="hogoR">保護日時<p class="hissu">必須</p></td>
-                  <td id="hogoW">
-                    <input type="text" class="textbox-001" placeholder=""/>
-                    <p>（入力例:2023/05/26 の場合  →  20230526）</p>
-                  </td>
-                </tr>
-                <tr id="hogoplace">
-                  <td id="hogoplaceR">保護場所<p class="hissu">必須</p></td>
-                  <td id="hogoplaceW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="injury">
-                  <td id="injuryR">怪我の有無<p class="hissu">必須</p></td>
-                  <td id="injuryW">
+                <tr id="vaccine">
+                  <td id="vaccineR">ワクチン接種<p class="hissu">必須</p></td>
+                  <td id="vaccineW">
                     <fieldset class="radio-003">
                       <label>
                           <input type="radio" name="radio-003" checked/>
-                          有り
+                          済
                       </label>
                       <label>
                           <input type="radio" name="radio-003"/>
-                          無し
+                          未
+                      </label>
+                    </fieldset>
+                    <p>接種済みのワクチンを登録する</p>
+                    <input type="text" class="textbox-002" placeholder=""/>
+                  </td>
+                </tr>
+                <tr id="cast">
+                  <td id="castR">去勢・避妊<p class="hissu">必須</p></td>
+                  <td id="castW">
+                    <fieldset class="radio-004">
+                      <label>
+                          <input type="radio" name="radio-004" checked/>
+                          済
+                      </label>
+                      <label>
+                          <input type="radio" name="radio-004"/>
+                          未
                       </label>
                     </fieldset>
                   </td>
                 </tr>
-                <tr id="color">
-                  <td id="colorR">体色<p class="hissu">必須</p></td>
-                  <td id="colorW">
-                    <input type="text" class="textbox-002" placeholder=""/>
+                <tr id="sperson">
+                  <td id="spersonR">単身応募</td>
+                  <td id="spersonW">
+                    <fieldset class="radio-005">
+                      <label>
+                          <input type="radio" name="radio-005"/>
+                          可能
+                      </label>
+                      <label>
+                          <input type="radio" name="radio-005"/>
+                          不可
+                      </label>
+                    </fieldset>
                   </td>
                 </tr>
-                <tr id="institution">
-                  <td id="institutionR">届出済の機関</td>
-                  <td id="institutionW">
-                    <input type="text" class="textbox-002" placeholder=""/>
+                <tr id="elder">
+                  <td id="elderR">高齢者（65歳以上）応募</td>
+                  <td id="elderW">
+                    <fieldset class="radio-006">
+                      <label>
+                          <input type="radio" name="radio-006"/>
+                          可能
+                      </label>
+                      <label>
+                          <input type="radio" name="radio-006"/>
+                          不可
+                      </label>
+                    </fieldset>
                   </td>
                 </tr>
-                <tr id="features">
-                  <td id="featuresR">特徴</td>
-                  <td id="featuresW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                
-                
-
                 <tr id="background">
                   <td id="backgroundR">募集の経緯<p class="hissu">必須</p></td>
                   <td class="area"><textarea></textarea></td>
