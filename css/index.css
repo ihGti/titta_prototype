@@ -17,11 +17,23 @@
 /* Topページの着せ替え------------------ */
 section.index_M_sec1_1 {
   width: 100%;
-  height: 695px;
+  height: auto;
   /* background-image: url(../images/toppage_room.jpg); */
   background-image: url(../images/toppage_room.jpg);
   background-size: cover;
-  margin: 0 0 -100px 0;
+  background-repeat: no-repeat;
+  margin-top: -5px;
+  position: relative;
+  color: #ffffff;
+}
+
+div#kisekaeyounoheya {
+}
+
+div#kisekaeyounoheya img {
+  width: 100vw;
+  min-width: 1400px;
+  height: auto;
 }
 
 /* 迷子掲示板フレーム */
@@ -29,7 +41,9 @@ div.index_M_sec1_di_1 {
   width: auto;
   height: 308px;
   background-color: #ff634700;
-  margin: 25px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* 注目コンテストフレーム */
@@ -37,7 +51,9 @@ div.index_M_sec1_di_2 {
   width: auto;
   height: 308px;
   background-color: #ff634700;
-  margin: 25px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 260px;
 }
 
 /* 迷子掲示板本体 */
@@ -66,6 +82,7 @@ div.index_M_sec1_di_1_1 div {
   background-color: #fefeff;
   margin: 10px auto 0 auto;
   text-align: center;
+  color: #000;
 }
 
 /* 迷子鳥 */
@@ -74,14 +91,14 @@ div.index_M_sec1_di_1_1 div img {
 }
 
 /* コンテストタイトル */
-div.index_M_secc1_di_2_1 h1 {
+div.index_M_secc1_di_1,
+div.index_M_secc1_di_2 h1 {
   font-size: 1.1rem;
-  margin: 35px 0 0 0;
+  color: #fefeff;
 }
 
 /* コンテスト */
 div.index_M_secc1_di_2_1 img {
-  margin: 25px 0 0 0;
 }
 
 /* Topページ下部------------------ */
@@ -89,7 +106,7 @@ section.index_M_sec2_1 {
   width: 100%;
   height: auto;
   background-color: #ff7f5000;
-  margin: 170px 0 100px 0;
+  margin: 90px 0 100px 0;
 }
 
 /* トップページ下部（フレックスBOX） */
@@ -240,7 +257,7 @@ div.index_M_sec2_fl_1 button {
   line-height: 28.7px;
 }
 
-div.index_M_sec2_fl_1 button:hover{
+div.index_M_sec2_fl_1 button:hover {
   background-color: #eebdb7;
   color: #fefeff;
 }
