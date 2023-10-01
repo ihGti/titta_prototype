@@ -1,88 +1,113 @@
 @charset "utf-8";
 
-/* common.cssは絶対に触らない！！！！！！！！！！！ */
 
-/* sample.cssをコピーし複製 */
-/* ファイル名はhtmlと同じ名前にしてください */
+#m-login{
+  height: 93vh;
+}
+
+div.wrap{
+  padding: 0 0 0 0;
+}
 
 
-/* sample.htmlにlinkタグがコメントアウトしてあるので良ければ使ってください */
+
+#m-login .wrap #right{
+  width: 50%;
+  border-left: #363A58 1px solid;
+}
 
 
-/*sample.html*/
-/*例*/
-#m-sample div.wrap div#login-form{
-  width: 400px;
-  height: 500px;
+
+#m-login div.wrap #right div#login-form{
+  width: 450px;
+  height: 570px;
   background-color: #363a58;
   flex-direction: column;
-  margin-left: 100px;
+  margin: 0 auto;
+  align-items: center;
+  margin: 65px 0 0 75px;
 }
 
-#m-sample div.wrap div#login-form form{
-  height: 300px;
-  margin: 50px auto 0 80px;
+#m-login div.wrap #right div#login-form form{
+  height: 450px;
+  margin: auto;
   color: #fff;
 }
 
-#m-sample div.wrap div#login-form form h1{
+#m-login div.wrap #right div#login-form form h1{
   font-size: 2.5rem;
+  margin: 0 0 0 55px;
+  padding: 60px 0 0 0;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-#m-sample div.wrap div#login-form form label p{
-  margin: 50px 0 0 0;
+#m-login div.wrap #right div#login-form form label p{
+  margin: 50px 0 0 55px;
+  font-size: 1.1rem;
 }
 
-#m-sample div.wrap div#login-form form input{
-  width: 250px;
-}
-
-#m-sample div.wrap div#login-form form input#bottun{
+#m-login div.wrap #right div#login-form form input{
+  width: 340px;
   height: 30px;
-  margin: 50px 0 0 0;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #363a58;
+  margin: 10px 0 0 55px;
+}
+
+#m-login div.wrap #right div#login-form form input#bottun{
+  height: 40px;
+  margin: 70px 0 0 55px;
+  border: 1px solid #363A58;
+  border-radius: 1px;
+  color: #363A58;
+  background-color: #fff;
   cursor: pointer;
-  box-shadow: 5px 3px 3px #ddd;
+  box-shadow: 5px 3px 10px #222;
 }
 
 
-#m-sample div.wrap div#login-form form input#bottun:hover{
-  background-color: #fff;
+#m-login div.wrap #right div#login-form form input#bottun:hover{
   color: #000;
+  box-shadow: none;
 }
 
 /* 会員登録へのリンク設定 */
-#m-sample div.wrap a{
-  display: inline-block;
+#m-login div.wrap a{
+  display: flex;
   color: white;
-  margin: 30px 0 0 140px;
+  padding: 0 0 3px 0;
+  justify-content: center;
+  margin: 30px 0 0 0;
 }
 
 
-/* 縦線 */
-#m-sample div.wrap div#vartical-line{
-  width: 1px;
-  height: 100vh;
-  background-color: #ddd;
-  margin: -20px 0 0 10px;
-}
 
 
 /* 画像設定 */
 
-#m-sample div.wrap div#site-image figure{
-  width: 600px;
+
+.wrap #left{
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
 }
 
-#m-sample div.wrap div#site-image figure img{
+
+#m-login div.wrap #left div#site-image figure img{
   width: 250px;
   height: auto;
-  margin: 180px 0 0 180px;
 }
 
 
 
 
+
+
+
+
+footer{
+  padding: 0 0 0 0;
+  height: 7vh;
+}
