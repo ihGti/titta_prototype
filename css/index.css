@@ -17,11 +17,23 @@
 /* Topページの着せ替え------------------ */
 section.index_M_sec1_1 {
   width: 100%;
-  height: 695px;
+  height: auto;
   /* background-image: url(../images/toppage_room.jpg); */
   background-image: url(../images/toppage_room.jpg);
   background-size: cover;
-  margin: 0 0 -100px 0;
+  background-repeat: no-repeat;
+  margin-top: -5px;
+  position: relative;
+  color: #ffffff;
+}
+
+div#kisekaeyounoheya {
+}
+
+div#kisekaeyounoheya img {
+  width: 100vw;
+  min-width: 1400px;
+  height: auto;
 }
 
 /* 迷子掲示板フレーム */
@@ -29,7 +41,9 @@ div.index_M_sec1_di_1 {
   width: auto;
   height: 308px;
   background-color: #ff634700;
-  margin: 25px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* 注目コンテストフレーム */
@@ -37,7 +51,9 @@ div.index_M_sec1_di_2 {
   width: auto;
   height: 308px;
   background-color: #ff634700;
-  margin: 25px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 260px;
 }
 
 /* 迷子掲示板本体 */
@@ -66,6 +82,7 @@ div.index_M_sec1_di_1_1 div {
   background-color: #fefeff;
   margin: 10px auto 0 auto;
   text-align: center;
+  color: #000;
 }
 
 /* 迷子鳥 */
@@ -74,14 +91,14 @@ div.index_M_sec1_di_1_1 div img {
 }
 
 /* コンテストタイトル */
-div.index_M_secc1_di_2_1 h1 {
+div.index_M_secc1_di_1,
+div.index_M_secc1_di_2 h1 {
   font-size: 1.1rem;
-  margin: 35px 0 0 0;
+  color: #fefeff;
 }
 
 /* コンテスト */
 div.index_M_secc1_di_2_1 img {
-  margin: 25px 0 0 0;
 }
 
 /* Topページ下部------------------ */
@@ -89,7 +106,7 @@ section.index_M_sec2_1 {
   width: 100%;
   height: auto;
   background-color: #ff7f5000;
-  margin: 170px 0 100px 0;
+  margin: 90px 0 100px 0;
 }
 
 /* トップページ下部（フレックスBOX） */
@@ -131,18 +148,20 @@ div.index_M_sec2_di_1 a#loginB {
 /* 検索BOX */
 div.index_M_sec2_di_1_1 {
   width: 100%;
-  height: 322px;
+  height: 280px;
   background-color: #ff000000;
-  border: solid 1px #eee;
-  margin: 0 0 40px 0;
+  border: solid 1px #eeeeee00;
+  border-bottom: none;
+  margin: 0 0 175px 0;
+  position: relative;
 }
 
 /* 絞り込み */
 div.index_M_sec2_di_1_1 h1 {
   width: 100%;
-  height: 35px;
+  height: 55px;
   background-color: #dc143c00;
-  line-height: 35px;
+  line-height: 55px;
   padding: 0 0 0 20px;
   border-bottom: solid 1px #ddd;
 }
@@ -169,6 +188,18 @@ div.index_M_sec2_di_1_1 div input {
   width: 150px;
   height: 30px;
   margin: 13px 0 0 20px;
+  background-color: #e5867b00;
+  border-radius: 8px;
+  border: solid 1px #f0f0f0;
+}
+
+input::placeholder {
+  color: #b0b0b0;
+  font-size: 0.8rem;
+}
+
+input:focus {
+  outline: solid 1px #ddd;
 }
 
 /* 除外キーワードフレーム */
@@ -212,10 +243,23 @@ div.index_M_sec2_fl_1_1_4 div form input {
 
 /* 検索ボタン */
 div.index_M_sec2_fl_1 button {
-  width: 100px;
-  height: 35px;
-  margin: 4px 15px 0 0;
-  float: right;
+  width: 80px;
+  height: 30px;
+  border: solid 1px #eebdb7;
+  background-color: #eebdb700;
+  border-radius: 8px;
+  transition: 0.5s;
+  color: #797979;
+  position: absolute;
+  /* top: 12px; */
+  right: 20px;
+  bottom: -60px;
+  line-height: 28.7px;
+}
+
+div.index_M_sec2_fl_1 button:hover {
+  background-color: #eebdb7;
+  color: #fefeff;
 }
 
 /* Topページ下部（カテゴリ検索）------------------ */
@@ -336,6 +380,7 @@ div.index_M_sec2_di_2 div div a.event2_frame {
   background-repeat: no-repeat;
 }
 
+/* お試し/初心者ガイド */
 a.event1_frame,
 a.event2_frame {
   transition: 0.5s;
@@ -360,54 +405,64 @@ div.search_from_kinds_of_pet div.kind_of_pets_flex {
   background-color: #c7158600;
 }
 
-/* お試し出品とはボタン */
+/* ペットの種類・写真 */
 div.kind_of_pets_flex a {
   width: 90px;
   height: 90px;
   border-radius: 50%;
+  text-decoration: none;
 }
 
+/* ペットの種類・写真個別 */
 div.kind_of_pets_flex a:first-child {
   background-image: url(../images/inu.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 div.kind_of_pets_flex a:nth-child(2) {
   background-image: url(../images/neko.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 div.kind_of_pets_flex a:nth-child(3) {
   background-image: url(../images/hamusuta-.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 div.kind_of_pets_flex a:nth-child(4) {
   background-image: url(../images/inko.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 div.kind_of_pets_flex a:nth-child(5) {
   background-image: url(../images/reopa.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 div.kind_of_pets_flex a:nth-child(6) {
   background-image: url(../images/kaeru.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 div.kind_of_pets_flex a:nth-child(7) {
   background-image: url(../images/hebi.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
+/* ペットの種類・名前達 */
+div.kind_of_pets_flex a p {
+  text-align: center;
+  margin: 100px 0 0 0;
+}
+
+/* 全ての商品を見る */
 div.search_from_kinds_of_pet > a {
   text-decoration: none;
   float: right;
-  margin: -20px 20px 0 0;
+  margin: 20px 20px 50px 0;
 }
 
+/* お試し出品・初心者ガイド */
 div.index_M_sec2_di_2 div.tutorial_choice {
   width: 810px;
   height: auto;
@@ -424,7 +479,7 @@ div.tutorial_choice a:first-child {
   border-radius: 10px;
   background-image: url(../images/3.png);
   background-size: cover;
-  transition: 0.5s;Users/kazum/Downloads/初心者ガイド/2.png Users/kazum/Downloads/初心者ガイド/3.png
+  transition: 0.5s;
 }
 
 div.tutorial_choice a:first-child:hover {
@@ -445,13 +500,15 @@ div.tutorial_choice a:nth-child(2):hover {
   opacity: 0.5;
 }
 
+/* 商品から探す・枠 */
 div.index_M_sec2_di_2 div.search_from_category_of_goods {
   width: 810px;
   height: auto;
   background-color: #dc143c00;
-  margin: 50px auto 150px auto;
+  margin: 50px auto 170px auto;
 }
 
+/* 商品から探すFlex */
 div.search_from_category_of_goods div.category_of_goods_flex {
   width: 95%;
   height: auto;
@@ -462,17 +519,18 @@ div.search_from_category_of_goods div.category_of_goods_flex {
 
 div.category_of_goods_flex a {
   width: 160px;
-  height: 75px;
+  height: 80px;
   border-radius: 10px;
   margin: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   position: relative;
 }
 
+/* 商品から探す・カテゴリ名 */
 div.category_of_goods_flex a p {
   font-size: 1rem;
   position: absolute;
-  top: 110%;
+  top: 120%;
   left: 50%;
   transform: translate(-50%, 0);
   background-color: #ff149100;
@@ -530,6 +588,7 @@ div.search_from_category_of_goods > a {
   margin: -20px 20px 0 0;
 }
 
+/* 里親掲示板の文字 */
 p.satooyabo {
   width: 100%;
   height: auto;
@@ -539,8 +598,9 @@ p.satooyabo {
   padding-left: 10px;
 }
 
+/* 掲示板の個々Flex */
 div#satooya_flex {
-  width: 100%;
+  width: 550px;
   height: auto;
   background-color: #e5867b00;
   display: flex;
@@ -548,31 +608,43 @@ div#satooya_flex {
   margin: 30px 0 70px 0;
 }
 
+/* 掲示板の個々 */
 div#satooya_flex a.satooyaboshuBox {
   display: block;
   width: auto;
-  height: 210px;
-  background-color: #fff8f700;
-  border: solid 0.5px #ddd;
+  height: auto;
+  background-color: #ff220000;
+  /* border: solid 0.5px #ddd; */
+  box-shadow: 2px 2px 7px #ddd;
   padding: 20px;
   text-decoration: none;
   text-align: center;
   transition: 0.5s;
 }
 
+/* スキマ開ける為 */
+div#satooya_flex a.satooyaboshuBox:nth-child(2),
+div#satooya_flex a.satooyaboshuBox:nth-child(3),
+div#satooya_flex a.satooyaboshuBox:nth-child(4) {
+  margin: 0 0 0 30px;
+}
+
 a.satooyaboshuBox:hover {
   opacity: 0.5;
 }
 
+/* 里親掲示板の個々の写真 */
 a.satooyaboshuBox div.satooyaoseru {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   background-color: #41537d;
   background-image: url(../images/neko.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
+/* 里親掲示板の下の文字 */
 a.satooyaboshuBox p.satooyasagasi_m {
   text-decoration: none;
+  margin-top: -20px;
 }
 /* --------------------------------------- */
