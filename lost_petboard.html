@@ -39,10 +39,10 @@
           <div class="nav-top">
             <nav>
               <ul>
-                <li><a href="#"><input type="submit" value="&#xf0e0;" class="button"></a></li>
-                <li><a href="#"><input type="submit" value="&#xf07a;" class="button"></a></li>
-                <li><a href="#"><input type="submit" value="&#xf004;" class="button"></a></li>
-                <li><a href="#"><input type="submit" value="&#xf007;" class="button"></a></li>
+                <li><a href="mailbox.html"><input type="submit" value="&#xf0e0;" class="button"></a></li>
+                <li><a href="cart.html"><input type="submit" value="&#xf07a;" class="button"></a></li>
+                <li><a href="favorite.html"><input type="submit" value="&#xf004;" class="button"></a></li>
+                <li><a href="my_profile.html"><input type="submit" value="&#xf007;" class="button"></a></li>
               </ul>
             </nav>
           </div>
@@ -66,7 +66,7 @@
             <li><a href="lost_petboard.html">迷子掲示板</a></li>
             <li><a href="contest.html">コンテスト</a></li>
             <li><a href="community.html">コミュニティ</a></li>
-            <li><a href="#">イベント</a></li>
+            <li><a href="event.html">イベント</a></li>
           </ul>
         </nav>
       </div>
@@ -151,7 +151,7 @@
                                 </ul>
                             </div>
                             <div id="location">
-                                <h3>所在地</h3>
+                                <h3>発見地</h3>
                                 <label class="selectbox-002">
                                     <select>
                                         <option>すべて</option>
@@ -161,8 +161,18 @@
                                 </label>
                             </div>
                             <div id="t_area">
-                                <h3>応募対象地域</h3>
-                                <label class="selectbox-002">
+                                <h3>ロスト地</h3>
+                                <label class="selectbox-004">
+                                    <select>
+                                        <option>すべて</option>
+                                        <option>柴犬</option>
+                                        <option>シマエナガ</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div id="datetime">
+                                <h3>発見日時</h3>
+                                <label class="selectbox-003">
                                     <select>
                                         <option>すべて</option>
                                         <option>柴犬</option>
@@ -192,22 +202,23 @@
                                     </select>
                                 </label>
                             </div>
-                            <div id="situation">
-                                <h3>状況</h3>
-                                <label class="selectbox-002">
-                                    <select>
-                                        <option>すべて</option>
-                                        <option>柴犬</option>
-                                        <option>シマエナガ</option>
-                                    </select>
-                                </label>
-                            </div>
                         </div>
                         <div id="bottom">
                             <div id="word">
                                 <h3>フリーワードで探す</h3>
                                 <input type="text" class="textbox-001" placeholder="フリーワードを入力する"/>
                             </div>
+                            <fieldset class="radio-002">
+                              <h3>状況：</h3>
+                              <label>
+                                  <input type="radio" name="radio-002" checked/>
+                                  迷子
+                              </label>
+                              <label>
+                                  <input type="radio" name="radio-002"/>
+                                  保護
+                              </label>
+                          </fieldset>
                         </div>
                     </div>
                     <div id="keep">
@@ -646,13 +657,11 @@
 
         <nav>
           <ul>
-           <li class="nav-bold">HELP</li>
-            <li><a href="#">ヘルプセンター</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-            <li><a href="#">ガイド</a></li>
+            <li class="nav-bold">HELP</li>
+            <li><a href="help.html">ヘルプセンター</a></li>
+            <li><a href="inquiry.html">お問い合わせ</a></li>
+            <li><a href="guid.html">ガイド</a></li>
             <li><a href="#">プライバシーポリシー</a></li>
-   
-          </ul>
           </ul>
         </nav>
 
@@ -664,9 +673,9 @@
         <nav>
           <ul>
             <li class="nav-bold">SETEMAP</li>
-            <li><a href="#">譲渡会</a></li>
-            <li><a href="#">迷子掲示板</a></li>
-            <li><a href="#">里親掲示板</a></li>
+            <li><a href="assignment.html">譲渡会</a></li>
+            <li><a href="lost_petboard.html">迷子掲示板</a></li>
+            <li><a href="foster_board.html">里親掲示板</a></li>
           </ul>
         </nav>
 

@@ -163,6 +163,15 @@ div.foster-wrap div#right{
 }
 
 
+#square #up #datetime{
+    display: flex;
+}
+#square #up #datetime h3{
+    margin: 30px 0 0 30px;
+    font-weight: 400;
+    color: #363A58;
+}
+
 
 #square #middle{
     border-bottom: #7D8BAE 1px dotted;
@@ -202,15 +211,26 @@ div.foster-wrap div#right{
     color: #363A58;
 }
 
+#square #bottom{
+    display: flex;
+}
 
 #square #bottom #word{
     display: flex;
+    margin: 0 0 0 0;
 }
 
 #square #bottom #word h3{
     margin: 25px 0 0 30px;
     font-weight: 400;
+    font-size: 0.8rem;
     color: #363A58;
+}
+
+.radio-002 h3{
+    font-weight: 400;
+    color: #363A58;
+    margin: 12px 0 0 85px;
 }
 
 
@@ -302,12 +322,124 @@ div.foster-wrap div#right{
 
 
 
+.selectbox-003 {
+    position: relative;
+    margin: 20px 0 0 15px;
+}
+  
+.selectbox-003::before,
+.selectbox-003::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+  
+.selectbox-003::before {
+    right: 0;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0 3px 3px 0;
+    content: '';
+}
+  
+.selectbox-003::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #363A58;
+    border-right: 3px solid #363A58;
+    content: '';
+}
+  
+.selectbox-003 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 200px;
+    height: 2.5em;
+    padding: .4em 3.6em .4em .8em;
+    border: 2px solid #7D8BAE;
+    border-radius: 2px;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+}
+  
+.selectbox-003 select:focus {
+    outline: 1px solid #363A58;
+}
+
+
+
+.selectbox-004 {
+    position: relative;
+    margin: 20px 0 0 60px;
+}
+  
+.selectbox-004::before,
+.selectbox-004::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+  
+.selectbox-004::before {
+    right: 0;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0 3px 3px 0;
+    content: '';
+}
+  
+.selectbox-004::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #363A58;
+    border-right: 3px solid #363A58;
+    content: '';
+}
+  
+.selectbox-004 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 200px;
+    height: 2.5em;
+    padding: .4em 3.6em .4em .8em;
+    border: 2px solid #7D8BAE;
+    border-radius: 2px;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+}
+  
+.selectbox-004 select:focus {
+    outline: 1px solid #363A58;
+}
+
+
+
+
+
+
+
 .textbox-001 {
-    width: 35%;
+    width: 160px;
     border: 1px solid #363A58;
     border-radius: 1px;
     margin: 15px 0 0 30px;
     height: 30px;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 
@@ -552,4 +684,55 @@ div.p-similar p a:hover {
 #numpage #after a:hover {
     color: #fff;
     background-color: #7D8BAE;
+}
+
+
+
+
+
+.radio-002 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em 2em;
+    border: none;
+    margin: 12px 0 0 0;
+}
+
+.radio-002 label {
+    display: flex;
+    align-items: center;
+    gap: 0 .5em;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-002 label::before,
+.radio-002 label::after {
+    border-radius: 50%;
+    content: '';
+}
+
+.radio-002 label::before {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #dee5eb;
+    box-sizing: border-box;
+}
+
+.radio-002 label::after {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    background-color: #dee5eb;
+}
+
+.radio-002 label:has(:checked)::after {
+    background-color: #000000;
+}
+
+.radio-002 input {
+    display: none;
 }
