@@ -4,18 +4,15 @@
 
   <head>
 
-      <meta charset="utf-8">
+      <meta charset="utf_8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Titta</title>
 
-    <!-- この２つのcssは触らない -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
 
-    <!-- cssを編集する時は各自でHTML名と同じ名前でcssファイルを作り、連携させること -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/ xxx.css"> -->
      <link rel="stylesheet" type="text/css" href="css/community.css"> 
 
 
@@ -49,10 +46,10 @@
           </div>
 
 
-        </div><!-- "rr-wrap" -->
+        </div><!-- "rr_wrap" -->
 
 
-      </div><!-- class="r-wrap" -->
+      </div><!-- class="r_wrap" -->
 
 
 
@@ -78,55 +75,132 @@
 
 
     <main id="m-sample">
+
       <div class="wrap">
-        <div id="c-frame">
+        <div id="c_frame">
 
 
-          <div id="c-frame-sb">
+          <div id="c_frame_sb">
 
-            <div id="c-frame-sb-u">
-              <a href="#"><span class="dli-arrow-left"></span></a>
+            <div id="c_frame_sb_u">
+                  <div id="c_frame_sb_u_co">
+                      <div class="dli-arrow-left" id="sb_cont">
+                  </div>
+              </div>
             </div>
 
-            <div id="c-frame-sb-d">
-              <ul id="c-frame-sb-d-user">
-                <li><figure><img src="images/bbc.jpg" alt=""></figure><p>HogeHoge</p></li>
-                <li><figure><img src="images/bbinu.png" alt=""></figure><p>HogePanda</p></li>
+            <div id="c_frame_sb_d" class="act">
+              <ul id="c_frame_sb_d_user">
+                <li ><figure><img src="images/bbc.jpg" alt=""></figure><p>HogeHoge</p></li>
+                <li ><figure><img src="images/bbinu.png" alt=""></figure><p>HogePanda</p></li>
               </ul>
             </div>
 
-          </div> <!-- c-frame-sb終了 -->
+          </div> <!-- c_frame_sb終了 -->
 
-          <div class="c-frame-mc">
+          <div id="c_frame_mc">
 
-            <div class="c-frame-mc-chat">
-              <ul class="mc-contents">
+            <div class="c_frame_mc_chat">
+              <div class="mc_contents_user">
+                <p>「ぶんぶんぶん」と「でょんんでょん」とでゅんでゅん他３名が参加中</p>
 
-              <li>
-                <figure><img src="images/bbc.jpg" alt=""></figure>
-                <span><p>HogeHogeufsaiodhfashdvjgfuyjfuyhohasdfasdfasdfasdfasfasfasdfasfasfdfapshdfopiash</p></span>
-              </li>
+              </div>
+              <ul class="mc_contents">
 
-              <li>
-                <figure><img src="images/bbinu.png" alt=""></figure>
-                <span><p>HogeHoge</p></span>
-              </li>
+                <li class="chat">
+                  
+                  <figure class="recep"><img src="images/bbc.jpg" alt=""></figure>
+                  <span><p>HogeHogeufsaiodhfashdvjgfuyjfuyhohasdfasdfasdfasdfasfasfasdfasfasfdfapshdfopiash</p></span>
+                  <figure class="send"></figure>
+                </li>
+
+                <li class="chat">
+                  <figure class="recep"><img src="images/bbinu.png" alt=""></figure>
+                  <span><p>HogeHoge</p></span>
+                  <figure class="send"></figure>
+                </li>
+
+                <li class="chat">
+                  <figure class="recep"></figure>
+                  <span><p>HogeHoge</p></span>
+                  <figure class="send"><img src="images/bbinu.png" alt=""></figure>
+                </li>
+
+
+
               </ul>
             </div>
             
 
-
-            <div class=" c-frame-mc-under">
-
+            <div class=" c_frame_mc_under">
 
               <form action="" id="chatform"> 
-                <div class="form-list"><div class="list"></div></div>
-                
 
 
-                <input type="text" class="chat-input" placeholder="入力してください">
-                <span class="unknown"></span>
-                <button class="chat-button">送信</button>
+              <div id="hide_ui_sendimg" class="hide_ui_sendimg">
+                <ul>
+                  <li><input id="sendimg" type="file" accept="image/*" multiple>画像を選択</li>
+                </ul>
+              </div>
+
+
+               <div id="hide_ui_stamp" class="hide_ui_sendimg">
+                <ul>
+                  <li>
+                    <p>スタンプ</p>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li>
+
+                  <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li>
+
+                   <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li>
+ <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li>
+                   <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li> <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li> <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li> <li>
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+
+
+                <div  id="info" class="form_list"><div class="list"></div></div>
+
+
+                <input type="text" class="chat_input" placeholder="入力してください">
+                <span  id="stamp" class="unknown"></span>
+                <button class="chat_button">送信</button>
 
               </form>
 
@@ -135,7 +209,7 @@
           </div>
 
 
-        </div><!-- c-frame　終わり￥-->
+        </div><!-- c_frame　終わり -->
       </div><!-- class="wrap" -->
 
     </main>
@@ -209,7 +283,7 @@
 
 
 
-      </div><!-- class="footer-wrap"の終了タグ -->
+      </div><!-- class="footer_wrap"の終了タグ -->
 
 
 
@@ -227,6 +301,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ebfd63cef7.js" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
+    <script src="js/community.js"></script>
 
   </body>
 
