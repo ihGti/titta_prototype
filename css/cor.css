@@ -62,16 +62,3 @@ main#m-sample button:hover {
   color: #f7f7ff;
 }
 
-footer div.copy-all_jyanai {
-  position: relative;
-  bottom: 0;
-
-  padding: 0px 0 10px 0;
-
-  text-align: center;
-  font-size: 0.5rem;
-  color: #f7f7ff;
-  background-color: #363a58;
-
-  z-index: 100;
-}
