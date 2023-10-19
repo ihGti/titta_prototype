@@ -1,0 +1,65 @@
+#select{
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+h1{
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 50px 0 0 70px;
+}
+#formr{
+  padding: 125px;
+}
+
+select{
+  background-color: #F7F7FF;
+  border: none;
+  font-size: 1.3rem;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+td{
+  border-bottom: #363A58 solid;
+}
+
+
+#kei{
+  margin: 0 auto;
+}
+#ue{
+  display: flex;
+
+}
+#sita{
+  display: flex;
+}
+#pp{
+  margin: 0 auto;
+  border-bottom: 1px solid;
+  padding: 5px 100px;
+}
+#hh{
+  margin: 0 auto;
+  padding: 5px 0 20px 0;
+}
+
+#list{
+}
+#product{
+  display: flex;
+  padding: 50px 200px;
+}
+#setu{
+  padding: 0 0 0 10px;
+}
+
+#btn{
+  border: 2px solid #E5857B;
+  background-color: #F1B2B2;
+  padding: 10px;
+  margin: 50px 300px 50px 395px;
+}
+#btn:hover{
+  opacity: 0.7;
+}
