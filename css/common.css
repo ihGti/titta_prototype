@@ -125,8 +125,7 @@ a.line-a {
 /* ここまでheaderのcss。触らない */
 
 /*sample.html 松本*/
-main {
-}
+
 div.wrap {
   width: 1200px;
 
@@ -147,7 +146,7 @@ div.wrap {
 footer {
   width: 100%;
   margin: 0 auto 0 auto;
-  padding: 20px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
   border-top: 1px #ddd solid;
   background-color: #363a58;
 }
@@ -207,7 +206,7 @@ footer div.copy-all {
 
   text-align: center;
   font-size: 0.5rem;
-  border-top: 1px #f7f7ff solid;
+  /* border-top: 1px #f7f7ff solid; */
   color: #f7f7ff;
   background-color: #363a58;
 }
