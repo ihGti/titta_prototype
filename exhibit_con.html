@@ -31,7 +31,8 @@
 
         <div class="rr-wrap">
 
-          <a href="index.html">
+          <!-- index.htmlへ遷移 -->
+          <a href="/">
             <figure>
               <img src="images/rogo.png" alt="rogo">
             </figure>
@@ -40,10 +41,12 @@
           <div class="nav-top">
             <nav>
               <ul>
-                <li><a href="#"><input type="submit" value="&#xf0e0;" class="button"></a></li>
-                <li><a href="#"><input type="submit" value="&#xf07a;" class="button"></a></li>
-                <li><a href="#"><input type="submit" value="&#xf004;" class="button"></a></li>
-                <li><a href="#"><input type="submit" value="&#xf007;" class="button"></a></li>
+                <!-- mailbox.htmlへ遷移 -->
+                <li><a href="/"><input type="submit" value="&#xf0e0;" class="button"></a></li>
+                <!-- favorite.htmlへ遷移 -->
+                <li><a href="/"><input type="submit" value="&#xf004;" class="button"></a></li>
+                <!-- login.htmlへ遷移 -->
+                <li><a href="/"><input type="submit" value="&#xf007;" class="button"></a></li>
               </ul>
             </nav>
           </div>
@@ -58,16 +61,17 @@
 
 
 
+
       <div class="nav-buttom">
         <nav>
           <ul>
-            <li><a href="index.html" class="line-a">HOME</a></li>
-            <li><a href="#">出品</a></li>
-            <li><a href="#">里親掲示板</a></li>
-            <li><a href="#">迷子掲示板</a></li>
-            <li><a href="#">コンテスト</a></li>
-            <li><a href="#">コミュニティ</a></li>
-            <li><a href="#">イベント</a></li>
+            <!-- index.htmlへ遷移 --><li><a href="/" class="line-a">HOME</a></li>
+            <!-- exhibit.htmlへ遷移 --><li><a href="/">出品</a></li>
+            <!-- foster_board.htmlへ遷移 --><li><a href="/">里親掲示板</a></li>
+            <!-- lost_petboard.htmlへ遷移 --><li><a href="/">迷子掲示板</a></li>
+            <!-- contest.htmlへ遷移 --><li><a href="/">コンテスト</a></li>
+            <!-- community.htmlへ遷移 --><li><a href="/">コミュニティ</a></li>
+            <!-- assignment.htmlへ遷移 --><li><a href="/">譲渡会</a></li>
           </ul>
         </nav>
       </div>
@@ -107,32 +111,14 @@
                 <textarea id="setumei" name="setumei" disabled>ただの猫タワーです</textarea>
               </div>
               <div id="form-2">
-                <div>
-                  <label>商品状態</label><select id="zyoutai" name="zyoutai" disabled>
-                  <option value="">選択してください</option>
-                  <option value="新品">新品</option>
-                  <option value="開封済み" selected>開封済み</option>
-                  <option value="使用済み">使用済み</option>
-                  <option value="破損">破損</option>
-                  </select>
+                <div class="henka">
+                  <label>商品状態</label><input type="text" id="syouhin" name="syouhin" value="良好" disabled>
                 </div>
-                <div>
-                  <label>配達方法</label><select id="haitatu" name="haitatu" disabled>
-                  <option value="">選択してください</option>
-                  <option value="手段1">手段1</option>
-                  <option value="手段2">手段2</option>
-                  <option value="手段3">手段3</option>
-                  <option value="手段4" selected>手段4</option>
-                  </select>
+                <div class="henka">
+                  <label>配達方法</label><input type="text" id="haitatu" name="haitatu" value="郵便" disabled>
                 </div>
-                <div>
-                  <label>ジャンル</label><select id="zyanru" name="zyanru" disabled>
-                  <option value="">選択してください</option>
-                  <option value="ジャンル1" selected>ジャンル1</option>
-                  <option value="ジャンル2">ジャンル2</option>
-                  <option value="ジャンル3">ジャンル3</option>
-                  <option value="ジャンル4">ジャンル4</option>
-                  </select>
+                <div class="henka">
+                  <label>ジャンル</label><input type="text" id="zyanru" name="zyanru" value="猫/おもちゃ" disabled>
                 </div>
                 <div>
                   <label>￥</label><input type="text" id="kane" name="kane" value="1200" disabled>
@@ -181,36 +167,36 @@
 
     <p id="page-top"><a href="#">Top</a></p>
 
-      <div class="footer-wrap">
+      <!-- <div class="footer-wrap"> -->
 
-
+<!-- 
       <div class="rogo-wrap">
         <figure>
           <img src="images/rogo.png" alt="rogo">
         </figure>
-      </div>
+      </div> -->
 
 
 
 
-      <div class="f-nav-wr">
+      <!-- <div class="f-nav-wr">
 
         <nav>
           <ul>
-           <li class="nav-bold">HELP</li>
+            <li class="nav-bold">HELP</li>
             <li><a href="#">ヘルプセンター</a></li>
             <li><a href="#">お問い合わせ</a></li>
             <li><a href="#">ガイド</a></li>
             <li><a href="#">プライバシーポリシー</a></li>
-   
+    
           </ul>
           </ul>
         </nav>
 
-      </div>
+      </div> -->
 
 
-            <div class="f-nav-wr">
+            <!-- <div class="f-nav-wr">
 
         <nav>
           <ul>
@@ -221,11 +207,12 @@
           </ul>
         </nav>
 
-      </div>
+      </div> -->
 
 
 
-      </div><!-- class="footer-wrap"の終了タグ -->
+      <!-- </div> -->
+      <!-- class="footer-wrap"の終了タグ -->
 
 
 
