@@ -5,18 +5,8 @@
     margin: 0 auto;
 }
 
-#right #link{
-    margin: 0 0 0 -330px;
-}
-
-#right #link a{
-    margin: 0 5px 0 5px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: blue;
-}
   
-  #right h2{
+#right h2{
     width: 170px;
     text-align: center;
     margin: 40px 0 0 70px;
@@ -52,8 +42,7 @@
 .minibox a:hover{
     opacity: 0.8;
 }
-.minibox a figure{
-}
+
 .minibox a figure img{
     width: 120px;
 }
