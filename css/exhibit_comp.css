@@ -15,8 +15,6 @@
 }
 
 body {
-  height: 100vh;
-  background-color: #363a58;
 }
 
 #m-sample div.wrap p {
@@ -29,12 +27,12 @@ main#m-sample {
 }
 
 main#m-sample video#registerd {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: auto;
   position: relative;
-  top: -21px;
-  margin-bottom: -27px;
+  top: -20.5px;
+  margin-bottom: -72px;
   z-index: 1;
 }
 
