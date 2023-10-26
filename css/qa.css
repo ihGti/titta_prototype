@@ -2,6 +2,10 @@ h1{
     padding: 50px;
     font-size: 2rem;
 }
+.itemm{
+    padding: 0 0 0 600px;
+
+}
 .A{
     display: inline-block;
     background: #7D8BAE;
@@ -9,6 +13,7 @@ h1{
     cursor: pointer;
     width: 700px;
     color: white;
+    display: flex;
 }
 .B{
     background: #F7F7FF;
@@ -23,6 +28,7 @@ h1{
     cursor: pointer;
     width: 700px;
     color: white;
+    display: flex;
 }
 .D{
     background: #F7F7FF;
@@ -37,6 +43,7 @@ h1{
     cursor: pointer;
     width: 700px;
     color: white;
+    display: flex;
 }
 .F{
     background: #F7F7FF;
