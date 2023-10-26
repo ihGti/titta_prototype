@@ -17,6 +17,10 @@ td{
 }
 .kane{
   padding: 10px 200px 10px 10px;
+  font-size: 1rem;
+}
+.taitoru{
+  font-size: 1.5rem;
 }
 img{
   width: 100px;
