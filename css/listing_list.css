@@ -101,16 +101,16 @@
     margin: 0px auto 0 auto;
 }
   
-.minibox .othersbox .userbox .top figure{
+.minibox .othersbox .userbox .top a figure{
     margin: 20px auto 0px auto;
     display: flex;
     justify-content: center;
-    width: 80px;
+    width: 100px;
     border-radius: 50%;
     overflow: hidden;
 }
   
-.minibox .othersbox .userbox .top figure img{
+.minibox .othersbox .userbox .top a figure img{
     width: 100%;
     height: 100%;
 }
@@ -121,19 +121,11 @@
 }
   
 .minibox .othersbox .userbox .mid a #name{
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
-    margin: 15px 0 15px 0;
+    margin: 20px 0 0 0;
 }
   
-  
-.minibox .othersbox .userbox .bot{
-    display: flex;
-    justify-content: center;
-}
-.minibox .othersbox .userbox .bot .DMbtn button{
-    margin: 0 15px 0 0;
-}
 
 
 
