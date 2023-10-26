@@ -102,11 +102,12 @@
               <table>
                 <tr>
                   <td><label>ポイント</label></td>
-                  <td><select name="point" id="point">
+                  <td><select name="point" id="point" onchange="viewChange();">
                     <option value="no">利用しない</option>
                     <option value="yes">利用する</option>
-                  </select></td>
+                  </select><div id="Box" style="display:none;"><label id="siyoul">使用するポイント数</label><input type="text" id="siyou"></div></td>
                 </tr>
+                <!-- <input type="text" name=""> -->
                 <tr>
                   <td><label>クーポン</label></td>
                   <td><select name="ku-pon" id="ku-pon">
@@ -118,11 +119,55 @@
                 </tr>
                 <tr>
                   <td><label>決済方法</label></td>
-                  <td><select name="card" id="card">
-                    <option value="カード１">カード１</option>
-                    <option value="かーど２">かーど２</option>
-                    <option value="カード３">カード３</option>
-                  </select></td>
+                  <td><select name="card" id="card" onchange="viewChange2();">
+                    <option value="select1">カード１</option>
+                    <option value="select2">かーど２</option>
+                    <option value="select3">カード３</option>
+                  </select>
+                  <div id="Box2" style="display:none;">
+                    <div>
+                      <label class="boxl">カード番号</label><input type="text" name="">
+                      <label class="boxl">有効期限</label><select name="" class="yukou">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>/<select name="" class="yukou">
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                        <option value="">32</option>
+                        <option value="">33</option>
+                        <option value="">34</option>
+                        <option value="">35</option>
+                        <option value="">36</option>
+                        <option value="">37</option>
+                        <option value="">38</option>
+                      </select>
+                    </div>
+                    <div id="yplp">
+                      <label class="boxl">名義人</label><input type="text" name="" id="meigi">
+                      <label class="boxl">CVV</label><input type="text" name="" id="cvv">
+                    </div>
+                    <div>
+                      <input type="submit" name="" value="確認" id="btn2">
+                    </div>
+                  </div>
+                  </td>
                 </tr>
               </table>
             </form>
@@ -156,7 +201,7 @@
 
 
       </div><!-- class="wrap" -->
-
+    <script type="text/javascript" src="js/settelement_check.js"></script>
     </main>
 
 
