@@ -94,12 +94,16 @@
 
 
 
-    <h1>プロフィール編集</h1>
-    <hr>
+    <h2>プロフィール編集</h2>
+    <!-- <hr> -->
     <form action="/" method="post" id="profile_edit" enctype="multipart/form-data">
       <div class="profile-picture">
-        <img src="images/default-icon.jpg" alt="デフォルトのプロフィール画像" id="profile_image">
+        <figure>
+          <img src="images/default-icon.jpg" alt="デフォルトのプロフィール画像" id="profile_image">
+        </figure>
       </div>
+        
+        
       
       <input type="file" id="profile_image" name="profile_image" onchange="document.getElementById('profile_edit').submit();">
 

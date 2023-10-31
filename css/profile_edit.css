@@ -16,23 +16,25 @@
   /* color: #000; */
 /* }  */
 
-#m-sample div.wrap h1{
+#m-sample div.wrap h2{
   width: 80%;
+  margin: 0 auto 0 auto;
   border-bottom: 1px solid;
   margin: 5px 0 20px 50px;
   padding-bottom: 10px;
   font-size: 30px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  /* font-family: 'Noto Serif JP', serif; */
 }
 
-form input#profile_image{
+input#profile_image{
   display: none;
 }
 
 .profile-picture {
   text-align: center;
-  margin: 0 0 30px 380px;
+  margin: 0 auto 0 auto;
   cursor: pointer;
   width: 150px;
   height: 150px;
