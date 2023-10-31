@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+#userProf{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#userProf #top{
+    display: flex;
+    margin: 50px 0 0 0;
+
+}
+
+#userProf #top #t_left{
+    margin: 0 0 0 40px;
+}
+
+#userProf #top #t_left figure img{
+    border-radius: 100%;
+}
+
+#userProf #top #t_mid{
+    margin: 0 0 0 70px;
+}
+
+#userProf #top #t_mid #userName{
+    font-size: 2rem;
+    margin: 65px 0 0 30px;
+}
+
+#userProf #top #t_mid #eva{
+    display: flex;
+    margin: 43px 0 0 30px;
+}
+
+#userProf #top #t_mid #eva #starBox{
+
+}
+
+#userProf #top #t_mid #eva #starBox span{
+    font-size: 21px;
+}
+
+#userProf #top #t_mid #eva #starBox .s_one{
+    color: yellow;
+}
+#userProf #top #t_mid #eva #starBox .s_two{}
+#userProf #top #t_mid #eva #starBox .s_three{}
+#userProf #top #t_mid #eva #starBox .s_four{}
+#userProf #top #t_mid #eva #starBox .s_five{}
+
+#userProf #top #t_mid #eva p{
+    margin: 3px 0 0 10px;
+}
+
+
+#userProf #top #t_right{
+    margin: 65px 0 0 110px;
+}
+
+#userProf #top #t_right #followBtn{
+    background-color: #fff;
+    color: #E5857B;
+    padding: 5px 25px;
+    border: #E5857B 1px solid;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+/* --------------- */
+
+#userProf #top_down{
+    display: flex;
+    margin: 50px 0 0 0;
+}
+
+#userProf #top_down #exhibitsNum{
+    font-size: 0.9rem;
+    margin: 0 0 0 80px;
+}
+
+#userProf #top_down #follow{
+    font-size: 0.9rem;
+    margin: 0 0 0 140px;
+}
+
+#userProf #top_down #follower{
+    font-size: 0.9rem;
+    margin: 0 0 0 30px;
+}
