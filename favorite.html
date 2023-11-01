@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>お問い合わせ</title>
+    <title>お気に入り</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/my_prof_left.css">
     <!-- ↑左のサイドバーのcss -->
     <!-- ↓ここ編集 -->
-    <link rel="stylesheet" type="text/css" href="css/inquiry.css">
+    <link rel="stylesheet" type="text/css" href="css/favorite.css">
 
 
   </head>
@@ -84,7 +84,6 @@
     <main id="m-my_profile">
 
       <div class="wrap">
-
         <div id="left"> <!-- 左 -->
 
           <div class="setmanage">
@@ -182,31 +181,36 @@
 
 
         <div id="right"><!-- 右  -->
-                  <h1>お問い合わせ</h1>
-          <div id="nyuuryoku">
-            <form>
-              <table>
-                <tr>
-                  <td>お名前</td>
-                  <td id="namae"><label>姓</label><input type="text" id="sei" name="sei"><br>
-                  <label>名</label><input type="text" id="na" name="na"></td>
-                </tr>
-                <tr>
-                  <td>メールアドレス(必須)</td>
-                  <td><input type="text" id="mail" name="mail"></td>
-                </tr>
-                <tr>
-                  <td>内容(必須)</td>
-                  <td><textarea id="nai" name="nai"></textarea></td>
-                </tr>
-              </table>
-              <button type="submit" id="btn" name="btn">送信</button>
-            </form>
-          </div>
+          <h1><u>お気に入り</u></h1>
+          <div id="yoko">
+            <table>
 
-          <div id="tel">
-            <h2>電話番号</h2>
-            <h2>0120-33-3906</h2>
+              <div>
+                <tr class="sen">
+                  <td rowspan="2"><img src="images/img1.jpg" alt=""></td>
+                  <td colspan="4" class="taitoru">title</td>
+                </tr>
+                <tr class="sen2">
+                  <td class="kane">￥6000</td>
+                  <td>&#9829;0</td>
+                  <td><img src="images/tyatto.png" class="tyatto">0</td>
+                  <td><button class="gomi">&#128465;</button></td>
+                </tr>
+              </div>
+              <div>
+                <tr class="sen">
+                  <td rowspan="2"><img src="images/img1.jpg" alt=""></td>
+                  <td colspan="4" class="taitoru">title</td>
+                </tr>
+                <tr class="sen2">
+                  <td class="kane">￥6000</td>
+                  <td>&#9829;0</td>
+                  <td><img src="images/tyatto.png" class="tyatto">0</td>
+                  <td><button class="gomi">&#128465;</button></td>
+                </tr>
+              </div>
+
+            </table>
           </div>
 
 
