@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>お問い合わせ</title>
+    <title>Titta</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/my_prof_left.css">
     <!-- ↑左のサイドバーのcss -->
     <!-- ↓ここ編集 -->
-    <link rel="stylesheet" type="text/css" href="css/inquiry.css">
+    <link rel="stylesheet" type="text/css" href="css/point.css">
 
 
   </head>
@@ -56,7 +56,6 @@
 
 
       </div><!-- class="r-wrap" -->
-
 
 
 
@@ -182,32 +181,144 @@
 
 
         <div id="right"><!-- 右  -->
-                  <h1>お問い合わせ</h1>
-          <div id="nyuuryoku">
-            <form>
-              <table>
-                <tr>
-                  <td>お名前</td>
-                  <td id="namae"><label>姓</label><input type="text" id="sei" name="sei"><br>
-                  <label>名</label><input type="text" id="na" name="na"></td>
-                </tr>
-                <tr>
-                  <td>メールアドレス(必須)</td>
-                  <td><input type="text" id="mail" name="mail"></td>
-                </tr>
-                <tr>
-                  <td>内容(必須)</td>
-                  <td><textarea id="nai" name="nai"></textarea></td>
-                </tr>
-              </table>
-              <button type="submit" id="btn" name="btn">送信</button>
-            </form>
+
+          <h2>ポイント管理</h2>
+
+          <div id="point"><!-- ポイント表示  -->
+
+            <div id="pointName">
+              <p>保有ポイント</p>
+            </div>
+
+            <div id="pointManage">
+
+              <figure>
+                <img src="images/pointIcon.png" alt="ポイント画像">
+              </figure>
+
+              <div id="countBox">
+                <p id="pointCount"><!-- {{}} -->12345</p><!-- 一旦入れとく -->
+                <p id="P">P</p>
+              </div>
+
+            </div>
           </div>
 
-          <div id="tel">
-            <h2>電話番号</h2>
-            <h2>0120-33-3906</h2>
+
+          <div class="historyArea">
+
+            <ul class="switching">  <!-- タブメニュー作りたいコーディングたのむ -->
+              <li id="onceBorder"><a href="/">ポイント履歴</a></li><!--一旦それっぽくしとく-->
+              <li><a href="/">有効期限</a></li>
+            </ul>
+          
+            <div id="history" class="area">
+              <div class="minibox">
+
+                <div id="leftBox">
+                  <p id="dateBox">2023/08/29</p><!-- {{}}2023/08/29  的な情報が入る -->
+                  <p id="detailInfo">
+                    購入・ペット用クールベッド トナカイ購入・ペット用クールベッド トナカイ購入
+                    ・ペット用クールベッド トナカイ購入・ペット用クールベッド トナカイ
+                  </p>
+                </div>
+  
+                <div id="rightBox">
+                  <p>
+                    <!-- いずれ   {% if points > 0 %}
+                                      +{{ points }}
+                                  {% else %}
+                                      {{ points }}
+                                  {% endif %}って感じになるかな？
+                    +なら黒　-なら赤　今は↓  5桁までなら綺麗に並ぶようにはしとく -->
+                      +50000
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="minibox">
+
+                <div id="leftBox">
+                  <p id="dateBox">2023/08/29</p><!-- {{}}2023/08/29  的な情報が入る -->
+                  <p id="detailInfo">
+                    購入・ペット用クールベッド トナカイ購入・ペット用クールベッド トナカイ購入
+                    ・ペット用クールベッド トナカイ購入・あああああああ
+                  </p>
+                </div>
+  
+                <div id="rightBox">
+                  <p>
+                    <!-- いずれ   {% if points > 0 %}
+                                      +{{ points }}
+                                  {% else %}
+                                      {{ points }}
+                                  {% endif %}って感じになるかな？
+                    +なら黒　-なら赤　今は↓  5桁までなら綺麗に並ぶようにはしとく -->
+                      +4321
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="minibox">
+
+                <div id="leftBox">
+                  <p id="dateBox">2023/08/29</p><!-- {{}}2023/08/29  的な情報が入る -->
+                  <p id="detailInfo">
+                    ポイントの使い道わかんね～w
+                  </p>
+                </div>
+  
+                <div id="rightBox">
+                  <p>
+                    <!-- いずれ   {% if points > 0 %}
+                                      +{{ points }}
+                                  {% else %}
+                                      {{ points }}
+                                  {% endif %}って感じになるかな？
+                    +なら黒　-なら赤　今は↓  5桁までなら綺麗に並ぶようにはしとく -->
+                      -73
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="minibox">
+
+                <div id="leftBox">
+                  <p id="dateBox">2023/08/29</p><!-- {{}}2023/08/29  的な情報が入る -->
+                  <p id="detailInfo">
+                    サイドバーサイドバーサイドバーサイドバーサイドバーサイドバーサイドバーサイドバーサイドバーサイド
+                    バーサイドバーサイドバーサイドバーサイドバー
+                  </p>
+                </div>
+  
+                <div id="rightBox">
+                  <p>
+                    <!-- いずれ   {% if points > 0 %}
+                                      +{{ points }}
+                                  {% else %}
+                                      {{ points }}
+                                  {% endif %}って感じになるかな？
+                    +なら黒　-なら赤　今は↓  5桁までなら綺麗に並ぶようにはしとく -->
+                      +4321
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- ↓切り替え先の情報入れるとこ（プログラム書き終えたら追加する） -->
+
+            <!--<div id="date_of_expiry" class="area">
+
+            </div> -->
+
           </div>
+
+
 
 
 
@@ -221,61 +332,40 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer>
 
-    <p id="page-top"><a href="#">Top</a></p>
+      <p id="page-top"><a href="#">Top</a></p>
 
-      <!-- <div class="footer-wrap"> -->
+      <!-- <div class="footer-wrap">
 
-<!-- 
+
       <div class="rogo-wrap">
         <figure>
           <img src="images/rogo.png" alt="rogo">
         </figure>
-      </div> -->
+      </div>
 
 
 
 
-      <!-- <div class="f-nav-wr">
+      <div class="f-nav-wr">
 
         <nav>
           <ul>
-            <li class="nav-bold">HELP</li>
+           <li class="nav-bold">HELP</li>
             <li><a href="#">ヘルプセンター</a></li>
             <li><a href="#">お問い合わせ</a></li>
             <li><a href="#">ガイド</a></li>
             <li><a href="#">プライバシーポリシー</a></li>
-    
+   
           </ul>
           </ul>
         </nav>
 
-      </div> -->
+      </div>
 
 
-            <!-- <div class="f-nav-wr">
+            <div class="f-nav-wr">
 
         <nav>
           <ul>
@@ -286,11 +376,11 @@
           </ul>
         </nav>
 
+      </div>
+
+
+
       </div> -->
-
-
-
-      <!-- </div> -->
       <!-- class="footer-wrap"の終了タグ -->
 
 

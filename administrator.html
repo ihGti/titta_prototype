@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Titta</title>
+
+    <!-- この２つのcssは触らない -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+
+    <!-- cssを編集する時は各自でHTML名と同じ名前でcssファイルを作り、連携させること -->
+    <link rel="stylesheet" type="text/css" href="css/administrator.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="r-wrap">
+        <div class="rr-wrap">
+          <!-- index.htmlへ遷移 -->
+          <a href="/">
+            <figure>
+              <img src="images/rogo.png" alt="rogo" />
+            </figure>
+          </a>
+
+          <div class="nav-top">
+            <nav>
+              <ul>
+                <!-- mailbox.htmlへ遷移 -->
+                <li>
+                  <a href="/"
+                    ><input type="submit" value="&#xf0e0;" class="button"
+                  /></a>
+                </li>
+                <!-- favorite.htmlへ遷移 -->
+                <li>
+                  <a href="/"
+                    ><input type="submit" value="&#xf004;" class="button"
+                  /></a>
+                </li>
+                <!-- login.htmlへ遷移 -->
+                <li>
+                  <a href="/"
+                    ><input type="submit" value="&#xf007;" class="button"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- "rr-wrap" -->
+      </div>
+      <!-- class="r-wrap" -->
+
+      <div class="nav-buttom">
+        <nav>
+          <ul>
+            <!-- index.htmlへ遷移 -->
+            <li><a href="/" class="line-a">HOME</a></li>
+            <!-- exhibit.htmlへ遷移 -->
+            <li><a href="/">出品</a></li>
+            <!-- foster_board.htmlへ遷移 -->
+            <li><a href="/">里親掲示板</a></li>
+            <!-- lost_petboard.htmlへ遷移 -->
+            <li><a href="/">迷子掲示板</a></li>
+            <!-- contest.htmlへ遷移 -->
+            <li><a href="/">コンテスト</a></li>
+            <!-- community.htmlへ遷移 -->
+            <li><a href="/">コミュニティ</a></li>
+            <!-- assignment.htmlへ遷移 -->
+            <li><a href="/">譲渡会</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="m-sample">
+      <div class="wrap">
+        <section class="user-notification">
+          <h3>ユーザーへのお知らせ</h3>
+          <div id="bunsho">文書</div>
+          <div class="action-buttons">
+            <button>参照</button>
+            <button>検索</button>
+          </div>
+        </section>
+
+        <section class="updated-messages">
+          <h3>更新されたメッセージ</h3>
+          <ul>
+            <li>あいうえお <span>2023/23/14/12:41:41</span></li>
+            <li>かきくけこ <span>2023/23/14/12:41:41</span></li>
+            <li>さしすせそ <span>2023/23/14/12:41:41</span></li>
+          </ul>
+        </section>
+
+        <div class="graph-container1">
+          <h1>利用者数</h1>
+          <h2>今月の増加数</h2>
+          <h3>先月の増加数</h3>
+          <h4>累計</h4>
+          <div class="graph-image">
+            <img src="path-to-your-image.jpg" alt="グラフの画像" />
+          </div>
+        </div>
+
+        <div class="graph-container2">
+          <h1>利用者数</h1>
+          <h2>今月の増加数</h2>
+          <h3>先月の増加数</h3>
+          <h4>累計</h4>
+          <div class="graph-image">
+            <img src="path-to-your-image.jpg" alt="グラフの画像" />
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div class="search-bar">
+            <input type="text" placeholder="検索" />
+            <button>検索</button>
+            <h1>イベント</h1>
+            <a href="/">一覧</a>
+          </div>
+          <div class="scroll-table">
+            <table class="info-table">
+              <thead>
+                <tr id="tr_first">
+                  <th>イベント名</th>
+                  <th>開始日</th>
+                  <th>終了日</th>
+                  <th>時間</th>
+                  <th>場所</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <!-- ここにイベントの情報を入れる -->
+              </tbody>
+            </table>
+          </div>
+          <div class="side-action">
+            <button>+ 新規</button>
+          </div>
+        </div>
+
+        <div class="form-container1">
+          <div class="search-bar">
+            <input type="text" placeholder="検索" />
+            <button>検索</button>
+            <h1>出品/取引完了履歴</h1>
+            <a href="/">一覧</a>
+          </div>
+          <div class="scroll-table">
+            <table class="info-table">
+              <thead>
+                <tr id="tr_first">
+                  <th>イベント名</th>
+                  <th>開始日</th>
+                  <th>終了日</th>
+                  <th>時間</th>
+                  <th>場所</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <!-- ここにイベントの情報を入れる -->
+              </tbody>
+            </table>
+          </div>
+          <div class="side-action">
+            <button>+ 新規</button>
+          </div>
+        </div>
+        <div class="form-container2">
+          <div class="search-bar">
+            <input type="text" placeholder="検索" />
+            <button>検索</button>
+            <h1 class="title_text">会員</h1>
+            <a href="/">一覧</a>
+          </div>
+          <div class="scroll-table">
+            <table class="info-table">
+              <thead>
+                <tr id="tr_first">
+                  <th>イベント名</th>
+                  <th>開始日</th>
+                  <th>終了日</th>
+                  <th>時間</th>
+                  <th>場所</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <!-- ここにイベントの情報を入れる -->
+              </tbody>
+            </table>
+          </div>
+          <div class="side-action">
+            <button>+ 新規</button>
+          </div>
+        </div>
+      </div>
+      <!-- class="wrap" -->
+    </main>
+
+    <footer>
+      <p id="page-top"><a href="#">Top</a></p>
+
+      <!-- <div class="footer-wrap"> -->
+
+      <!-- 
+      <div class="rogo-wrap">
+        <figure>
+          <img src="images/rogo.png" alt="rogo">
+        </figure>
+      </div> -->
+
+      <!-- <div class="f-nav-wr">
+
+        <nav>
+          <ul>
+            <li class="nav-bold">HELP</li>
+            <li><a href="#">ヘルプセンター</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">ガイド</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+    
+          </ul>
+          </ul>
+        </nav>
+
+      </div> -->
+
+      <!-- <div class="f-nav-wr">
+
+        <nav>
+          <ul>
+            <li class="nav-bold">SETEMAP</li>
+            <li><a href="#">譲渡会</a></li>
+            <li><a href="#">迷子掲示板</a></li>
+            <li><a href="#">里親掲示板</a></li>
+          </ul>
+        </nav>
+
+      </div> -->
+
+      <!-- </div> -->
+      <!-- class="footer-wrap"の終了タグ -->
+
+      <div class="copy-all">
+        2023 &copy; Copyright Titta. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- jQueryへのリンク -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ebfd63cef7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

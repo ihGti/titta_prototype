@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* common.cssは絶対に触らない！！！！！！！！！！！ */
+
+/* sample.cssをコピーし複製 */
+/* ファイル名はhtmlと同じ名前にしてください */
+
+/* sample.htmlにlinkタグがコメントアウトしてあるので良ければ使ってください */
+
+/*sample.html*/
+/*例*/
+#m-sample div.wrap p {
+  /* 例として書いてあるだけなので消して大丈夫です */
+  color: #000;
+}
+
+.wrap {
+  justify-content: space-between;
+}
+
+.user-notification {
+  width: 500px;
+  height: 250px;
+  background-color: #fff;
+  padding: 0 20px 20px 20px;
+  margin: 50px 0 20px 50px;
+  border-radius: 5px;
+}
+
+.user-notification h3 {
+  margin: 10px 0 10px 30px;
+}
+
+.user-notification div#bunsho {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.action-buttons {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin: 0 auto;
+}
+
+button {
+  padding: 5px 15px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.updated-messages {
+  width: 500px;
+  height: 250px;
+  background-color: #fff;
+  padding: 0 20px 20px 20px;
+  margin: 50px 50px 20px 0px;
+  border-radius: 5px;
+}
+
+.updated-messages h3 {
+  margin: 10px 0 10px 30px;
+}
+
+.updated-messages ul {
+  list-style-type: none;
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+  margin: 0 auto 0 auto;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.updated-messages li {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.updated-messages span {
+  color: #888;
+}
+
+.graph-container1 {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin: 30px 0 0 50px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.graph-container1 h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 10px 0;
+}
+
+.graph-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.graph-container2 {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin: 30px 50px 0 0;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.graph-container2 h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 10px 0;
+}
+
+.form-container {
+  width: 1100px;
+  margin: 30px auto 0 auto;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+.search-bar h1 {
+  line-height: 30px;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.search-bar a {
+  display: block;
+  padding: 10px 10px 7px 10px;
+  position: absolute;
+  right: 0;
+  background-color: #000;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(244, 244, 244);
+}
+
+.scroll-table {
+  width: 100%;
+  height: 100px;
+  overflow-y: auto;
+}
+
+#tr_first {
+  background-color: #cecbff;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid rgba(0, 0, 0, 0.042);
+  padding: 10px;
+  text-align: center;
+}
+
+.side-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-action button {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.118);
+}
+
+.form-container1 {
+  width: 570px;
+  margin: 30px 30px 0 50px;
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.form-container2 {
+  width: 470px;
+  margin: 30px 50px 0 30px;
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.form-container1 h1{
+  color: #000000;
+  margin: 0 0 0 95px;
+}
+
+.form-container2 h1{
+  color: #000000;
+  margin: 0 0 0 95px;
+}
