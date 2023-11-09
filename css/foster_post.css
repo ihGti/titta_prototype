@@ -6,11 +6,6 @@
 /* --里親投稿-- */
 
 
-div.wrap{
-  display: block;
-  height: auto;
-}
-
 /* -------------↓カテゴリーナビゲーション----------------- */
 
 .category-navigation {
@@ -39,9 +34,6 @@ div.wrap{
 
 
 
-#full{
-  display: flex;
-}
 
 
 
@@ -50,37 +42,11 @@ div.wrap{
 /* --------------↓左-------------------- */
 
 
-#left{
-  display: flex;
-  flex-direction: column;
-  width: 320;
-  margin: 0 0 0 50px;
-}
+
 
 
 /* ------------↓プロフィール-------------- */
 
-#prof{
-  background-color: #fff;
-  border: #E5857B 1px solid;
-  width: 300px;
-  height: 90px;
-  margin: 0 auto;
-}
-#name{
-  display: flex;
-  margin: 20px 0 15px 30px;
-  font-size: 1.1rem;
-}
-#name #sama{
-  margin: 0 0 0 10px;
-}
-#prof a{
-  text-decoration: none;
-  margin: 10px 0 0 30px;
-  font-size: 0.8rem;
-  color: #E5857B;
-}
 
 
 
@@ -91,34 +57,7 @@ div.wrap{
 /* ---------サブナビゲーション---------- */
 
 
-#sub-nav{
-  border: #E5857B 0.5px solid;
-  background-color: #fff;
-  width: 300px;
-  margin: 30px 0 0 0;
-}
 
-#sub-nav ul{
-  list-style: none;
-}
-
-#sub-nav ul li{
-  padding: 10px 10px 10px 30px;
-  border-bottom: #E5857B 2px dashed;
-  font-size: 1.1rem;
-}
-#sub-nav ul li:last-child{
-  border-bottom: none;
-}
-
-#sub-nav ul li a{
-  text-decoration: none;
-  color: #000;
-}
-
-#sub-nav ul li a:hover{
-  opacity: 0.7;
-}
 
 
 
@@ -161,13 +100,6 @@ div.wrap{
   border-left: #E5857B 4px solid;
   margin: 0 0 0 0;
   padding: 0 0 0 7px;
-}
-
-#detail p{
-  font-size: 0.9rem;
-  margin: 20px 0 0 10px;
-  line-height: 30px;
-  
 }
 
 
@@ -259,12 +191,34 @@ div.wrap{
   margin: 15px 0 15px 60px;
 }
 
-#right table tbody #vaccine #vaccineW p{
-  margin: 30px 0 10px 50px;
-  font-size: 0.9rem;
+
+#right table tbody #hogo #hogoW{
+    vertical-align: middle;
+    padding: 20px 0 0 0;
 }
 
+#right table tbody #hogo #hogoW p{
+  margin: 10px 0 10px 50px;
+  font-size: 0.8rem;
+}
 
+#right table tbody #hogoplace #hogoplaceW{
+    vertical-align: middle;
+}
+
+#right table tbody #injury #injuryW{
+    vertical-align: middle;
+}
+
+#right table tbody #color #colorW{
+    vertical-align: middle;
+}
+#right table tbody #institution #institutionW{
+    vertical-align: middle;
+}
+#right table tbody #features #featuresW{
+    vertical-align: middle;
+}
 
 
 
@@ -293,26 +247,38 @@ div.wrap{
 #right table tbody #size #sizeR{
   padding: 35px 0 30px 20px;
 }
-#right table tbody #vaccine #vaccineR{
-  height: 150px;
+#right table tbody #hogo #hogoR{/*------------------------------------------ */
+  height: 100px;
   vertical-align: middle;
   padding: 0 0 0 20px;
 }
-#right table tbody #cast #castR{
+#right table tbody #hogoplace #hogoplaceR{
   padding: 0 0 0 20px;
   height: 100px;
   vertical-align: middle;
 }
-#right table tbody #sperson #spersonR{
+#right table tbody #injury #injuryR{
   padding: 0 0 0 20px;
   height: 100px;
   vertical-align: middle;
 }
-#right table tbody #elder #elderR{
+#right table tbody #color #colorR{
   padding: 0 0 0 20px;
   height: 100px;
   vertical-align: middle;
 }
+#right table tbody #institution #institutionR{
+  padding: 0 0 0 20px;
+  height: 100px;
+  vertical-align: middle;
+}
+#right table tbody #features #featuresR{
+  padding: 0 0 0 20px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+
 #right table tbody #background #backgroundR{
   padding: 0 0 0 20px;
   height: 150px;
@@ -512,7 +478,7 @@ div.wrap{
   flex-wrap: wrap;
   gap: .3em 2em;
   border: none;
-  margin: 25px 0 20px 50px;
+  margin: 0 0 0 50px;
 }
 .radio-003 label {
   display: flex;
@@ -843,7 +809,10 @@ div.wrap{
   font-size: 1.1rem;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3);
 }
-#last #regi a{
+#last #regi input{
+  border: none;
+  background-color: #E5857B;
+  padding: 8px 70px;
   text-decoration: none;
   color: #000;
 }
@@ -855,12 +824,10 @@ div.wrap{
 
 #last #memo{
   border-radius: 1px;
-  border: #E5857B 2px solid;
   justify-content: space-around;
   margin: 20px 0 15px 0;
   width: 200px;
   text-decoration: none;
-  padding: 3px 5px;
   color: #000;
   text-align: center;
   line-height: 35px;
@@ -868,7 +835,10 @@ div.wrap{
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3);
 }
 
-#last #memo a{
+#last #memo input{
+  border: #E5857B 2px solid;
+  background-color: white;
+  padding: 8px 45px;
   text-decoration: none;
   color: #000;
 }

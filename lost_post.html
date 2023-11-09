@@ -8,13 +8,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Titta</title>
+    <title>Titta{% block title %} {% endblock%}</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
-
-    <link rel="stylesheet" type="text/css" href="css/lost_post.css">
-
+    {% block css %} 
+     <link rel="stylesheet" type="text/css" href="css/foster_post.css">
+     <link rel="stylesheet" type="text/css" href="css/my_prof_left.css">
+    {% endblock %}
 
   </head>
 
@@ -37,10 +38,18 @@
           <div class="nav-top">
             <nav>
               <ul>
-                <li><a href="mailbox.html"><input type="submit" value="&#xf0e0;" class="button"></a></li>
-                <li><a href="cart.html"><input type="submit" value="&#xf07a;" class="button"></a></li>
-                <li><a href="favorite.html"><input type="submit" value="&#xf004;" class="button"></a></li>
-                <li><a href="login.html"><input type="submit" value="&#xf007;" class="button"></a></li>
+                <!-- mailbox.htmlへ遷移 -->
+                <li><a href="/mailbox"><input type="submit" value="&#xf0e0;" class="button"></a></li>
+                <!-- favorite.htmlへ遷移 -->
+                <li><a href="/favorite"><input type="submit" value="&#xf004;" class="button"></a></li>
+                <!-- login.htmlへ遷移 -->
+                <li>
+                   {% if user.F_ProfileImage %}
+                     <a href=""><img src="{{ url_for('static', filename='prof_image/' + user.F_ProfileImage)}}" alt="profile_image" style="height: 25px; border:solid 1px; border-radius:100%;"></a>
+                   {% else %}
+                     <a href="login.html"><input type="submit" value="&#xf007;" class="button"></a>
+                   {% endif %} 
+                </li>
               </ul>
             </nav>
           </div>
@@ -72,52 +81,98 @@
 
 
 
+{% block content %}
 
     <main id="m-sample">
 
       <div class="wrap">
 
-        <div class="category-navigation">
-          <ul>
-              <li><a href="#">Titta</a></li>
-              <li><a href="#">マイページ</a></li>
-              <li><a href="#">里親募集登録</a></li>
-          </ul>
-        </div>
+        <div id="left"> <!-- 左 -->
 
-        <div id="full">
-          <div id="left">
+          <div class="setmanage">
 
-            <div id="prof">
-              <div id="name">
-                <p>
-                  ニックネーム
-                </p>
-                <p id="sama">
-                  様
-                </p>
-              </div>
-              <a href="#">[ ログアウト ]</a>
+            <p class="minitop">商品管理</p>
 
-            </div>
-
-            <div id="sub-nav">
-
-              <ul>
-                <li><a href="#">登録したペット一覧</a></li>
-                <li><a href="#">プロフィール編集</a></li>
-                <li><a href="#">里親募集ペットを登録</a></li>
-                <li><a href="#">迷子ペット情報を登録</a></li>
-                <li><a href="#">譲渡誓約書</a></li>
-                <li><a href="#">掲示板掲載履歴</a></li>
-                <li><a href="#">売上・ポイント管理</a></li>
-                <li><a href="#">各種設定</a></li>
-                <li><a href="#">ヘルプ</a></li>
-              </ul>
-
-            </div>
+            <ul>
+              <li><a href="/">お気に入り一覧<div class="arrow no1"></div></a></li><!-- favorite.html -->
+              <li><a href="/">出品状況<div class="arrow no1"></div></a></li><!-- exhibition_list.html -->
+              <!-- <li><a href="/">下書き一覧<div class="arrow no1"></div></a></li> -->
+              <li><a href="/">閲覧履歴<div class="arrow no1"></div></a></li><!-- browsing.html -->
+              <li><a href="/">購入履歴<div class="arrow no1"></div></a></li><!-- listing_list.html -->
+            </ul>
 
           </div>
+
+          <div class="setmanage">
+
+            <p class="minitop">売上・ポイント</p>
+
+            <ul>
+              <li><a href="/">売上履歴<div class="arrow no1"></div></a></li><!-- earnings_history.html -->
+              <li><a href="/">ポイント<div class="arrow no1"></div></a></li><!-- point.html -->
+            </ul>
+
+          </div>
+
+          <div class="setmanage">
+
+            <p class="minitop">里親・迷子掲示板</p>
+
+            <ul>
+              <li><a href="/">過去の掲載履歴<div class="arrow no1"></div></a></li><!-- petpublish_history.html -->
+              <li><a href="/">登録中のペット一覧<div class="arrow no1"></div></a></li><!-- reg_pet.html -->
+            </ul>
+
+          </div>
+
+          <div class="setmanage">
+
+            <p class="minitop">コンテスト</p>
+
+            <ul>
+              <li><a href="/">開催中のコンテスト<div class="arrow no1"></div></a></li><!-- contest.html -->
+              <!-- <li><a href="/">過去のコンテスト参加履歴<div class="arrow no1"></div></a></li> -->
+            </ul>
+
+          </div>
+
+          <div class="setmanage">
+
+            <p class="minitop">登録</p>
+
+            <ul>
+              <li><a href="/">里親募集ペットを登録<div class="arrow no1"></div></a></li><!-- foster_post.html -->
+              <li><a href="/">迷子ペット情報を登録<div class="arrow no1"></div></a></li><!-- lost_post.html -->
+              <li><a href="/">譲渡誓約書<div class="arrow no1"></div></a></li><!-- pdfに遷移-->
+            </ul>
+
+          </div>
+
+          <div class="setmanage">
+
+            <p class="minitop">設定</p>
+
+            <ul>
+              <li><a href="/">お知らせ設定<div class="arrow no1"></div></a></li><!-- notice.html -->
+              <li><a href="/">着せ替え設定<div class="arrow no1"></div></a></li><!-- dressup.html -->
+            </ul>
+
+          </div>
+
+          <div class="setmanage">
+
+            <p class="minitop">ヘルプ</p>
+
+            <ul>
+              <li><a href="/">Q&A<div class="arrow no1"></div></a></li><!-- qa.html -->
+              <li><a href="/">お問い合わせ<div class="arrow no1"></div></a></li><!-- inquiry.html -->
+            </ul>
+
+          </div>
+
+          <div id="logout"><a href="/">ログアウト</a></div>
+
+        </div>
 
 
           <div id="right">
@@ -128,191 +183,192 @@
 
 
 
-
-            <table>
-              <tbody>
-                <tr id="keisai">
-                  <td id="keisaiR">掲載期日<p class="hissu">必須</p></td>
-                  <td id="keisaiW">
-                    <input type="text" class="textbox-001" placeholder=""/>
-                    <p>（入力例:2023/05/26 の場合  →  20230526）</p>
-                  </td>
-                </tr>
-                <tr id="kinds">
-                  <td id="kindsR">ペット種別<p class="hissu">必須</p></td>
-                  <td id="kindsW">
-                    <label class="selectbox-002">
-                      <select>
-                          <option>選択してください</option>
-                          <option>柴犬</option>
-                          <option>シマエナガ</option>
-                      </select>
-                    </label>
-                  </td>
-                </tr>
-                <tr id="post">
-                  <td id="postR">投稿タイトル</td>
-                  <td id="postW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="location">
-                  <td id="locationR">ペット所在地<p class="hissu">必須</p></td>
-                  <td id="locationW">
-                    <fieldset class="radio-001">
-                      <label>
-                          <input type="radio" name="radio-001" checked/>
-                          登録した住所（名古屋市中区）にいます
+            <form>
+              <table>
+                <tbody>
+                  <tr id="keisai">
+                    <td id="keisaiR">掲載期日<p class="hissu">必須</p></td>
+                    <td id="keisaiW">
+                      <input type="text" class="textbox-001" name="keisai" placeholder=""/>
+                      <p>（入力例:2023/05/26 の場合  →  20230526）</p>
+                    </td>
+                  </tr>
+                  <tr id="kinds">
+                    <td id="kindsR">ペット種別<p class="hissu">必須</p></td>
+                    <td id="kindsW">
+                      <label class="selectbox-002" for="kinds">
+                        <select name="kinds">
+                            <option value="">選択してください</option>
+                            <option value="">柴犬</option>
+                            <option value="">シマエナガ</option>
+                        </select>
                       </label>
-                      <label>
-                          <input type="radio" name="radio-001"/>
-                          上記以外の住所にいます
-                      </label>
-                    </fieldset>
-                    <p>※募集投稿では、都道府県・市区町村まで表示されます。</p>
-                    <fieldset class="checkbox-001">
-                      <label>
-                          <input type="checkbox" name="checkbox-001" checked/>
-                          行政の保護施設にいます（民間の場合は登録しないで下さい）
-                      </label>
-                    </fieldset>
-                  </td>
-                </tr>
-                <tr id="gen">
-                  <td id="genR">性別<p class="hissu">必須</p></td>
-                  <td id="genW">
-                    <fieldset class="radio-002">
-                      <label>
-                          <input type="radio" name="radio-002" checked/>
-                          男の子
-                      </label>
-                      <label>
-                          <input type="radio" name="radio-002"/>
-                          女の子
-                      </label>
-                      <label>
-                          <input type="radio" name="radio-002"/>
-                          不明
-                      </label>
-                    </fieldset>
-                  </td>
-                </tr>
-                <tr id="age">
-                  <td id="ageR">年齢<p class="hissu">必須</p></td>
-                  <td id="ageW">
-                    <input type="text" class="textbox-001" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="size">
-                  <td id="sizeR">大きさ<p class="hissu">必須</p></td>
-                  <td id="sizeW">
-                    <input type="text" class="textbox-001" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="hogo">
-                  <td id="hogoR">保護日時<p class="hissu">必須</p></td>
-                  <td id="hogoW">
-                    <input type="text" class="textbox-001" placeholder=""/>
-                    <p>（入力例:2023/05/26 の場合  →  20230526）</p>
-                  </td>
-                </tr>
-                <tr id="hogoplace">
-                  <td id="hogoplaceR">保護場所<p class="hissu">必須</p></td>
-                  <td id="hogoplaceW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="injury">
-                  <td id="injuryR">怪我の有無<p class="hissu">必須</p></td>
-                  <td id="injuryW">
-                    <fieldset class="radio-003">
-                      <label>
-                          <input type="radio" name="radio-003" checked/>
-                          有り
-                      </label>
-                      <label>
-                          <input type="radio" name="radio-003"/>
-                          無し
-                      </label>
-                    </fieldset>
-                  </td>
-                </tr>
-                <tr id="color">
-                  <td id="colorR">体色<p class="hissu">必須</p></td>
-                  <td id="colorW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="institution">
-                  <td id="institutionR">届出済の機関</td>
-                  <td id="institutionW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                <tr id="features">
-                  <td id="featuresR">特徴</td>
-                  <td id="featuresW">
-                    <input type="text" class="textbox-002" placeholder=""/>
-                  </td>
-                </tr>
-                
-                
+                    </td>
+                  </tr>
+                  <tr id="post">
+                    <td id="postR">投稿タイトル</td>
+                    <td id="postW">
+                      <input type="text" class="textbox-002" name="post" placeholder=""/>
+                    </td>
+                  </tr>
+                  <tr id="location">
+                    <td id="locationR">ペット所在地<p class="hissu">必須</p></td>
+                    <td id="locationW">
+                      <fieldset class="radio-001">
+                        <label>
+                            <input type="radio" name="radio-001" checked/>
+                            登録した住所（名古屋市中区）にいます
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-001"/>
+                            上記以外の住所にいます
+                        </label>
+                      </fieldset>
+                      <p>※募集投稿では、都道府県・市区町村まで表示されます。</p>
+                      <fieldset class="checkbox-001">
+                        <label>
+                            <input type="checkbox" name="checkbox-001" checked/>
+                            行政の保護施設にいます（民間の場合は登録しないで下さい）
+                        </label>
+                      </fieldset>
+                    </td>
+                  </tr>
+                  <tr id="gen">
+                    <td id="genR">性別<p class="hissu">必須</p></td>
+                    <td id="genW">
+                      <fieldset class="radio-002">
+                        <label>
+                            <input type="radio" name="radio-002" checked/>
+                            男の子
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-002"/>
+                            女の子
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-002"/>
+                            不明
+                        </label>
+                      </fieldset>
+                    </td>
+                  </tr>
+                  <tr id="age">
+                    <td id="ageR">年齢<p class="hissu">必須</p></td>
+                    <td id="ageW">
+                      <input type="text" class="textbox-001" name="age" placeholder=""/>
+                    </td>
+                  </tr>
+                  <tr id="size">
+                    <td id="sizeR">大きさ<p class="hissu">必須</p></td>
+                    <td id="sizeW">
+                      <input type="text" class="textbox-001" name="size" placeholder=""/>
+                    </td>
+                  </tr>
+                  <tr id="hogo">
+                    <td id="hogoR">保護日時<p class="hissu">必須</p></td>
+                    <td id="hogoW">
+                      <input type="text" class="textbox-001" name="hogo" placeholder=""/>
+                      <p>（入力例:2023/05/26 の場合  →  20230526）</p>
+                    </td>
+                  </tr>
+                  <tr id="hogoplace">
+                    <td id="hogoplaceR">保護場所<p class="hissu">必須</p></td>
+                    <td id="hogoplaceW">
+                      <input type="text" class="textbox-002" placeholder=""/>
+                    </td>
+                  </tr>
+                  <tr id="injury">
+                    <td id="injuryR">怪我の有無<p class="hissu">必須</p></td>
+                    <td id="injuryW">
+                      <fieldset class="radio-003">
+                        <label>
+                            <input type="radio" name="radio-003" checked/>
+                            有り
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-003"/>
+                            無し
+                        </label>
+                      </fieldset>
+                    </td>
+                  </tr>
+                  <tr id="color">
+                    <td id="colorR">体色<p class="hissu">必須</p></td>
+                    <td id="colorW">
+                      <input type="text" class="textbox-002" name="color" placeholder=""/>
+                    </td>
+                  </tr>
+                  <tr id="institution">
+                    <td id="institutionR">届出済の機関</td>
+                    <td id="institutionW">
+                      <input type="text" class="textbox-002" name="institution" placeholder=""/>
+                    </td>
+                  </tr>
+                  <tr id="features">
+                    <td id="featuresR">特徴</td>
+                    <td id="featuresW">
+                      <input type="text" class="textbox-002" name="features" placeholder=""/>
+                    </td>
+                  </tr>
+                  
+                  
 
-                <tr id="background">
-                  <td id="backgroundR">募集の経緯<p class="hissu">必須</p></td>
-                  <td class="area"><textarea></textarea></td>
-                </tr>
-                <tr id="personality">
-                  <td id="personalityR">性格・特徴<p class="hissu">必須</p></td>
-                  <td class="area"><textarea></textarea></td>
-                </tr>
-                <tr id="health">
-                  <td id="healthR">健康状態<p class="hissu">必須</p></td>
-                  <td class="area"><textarea></textarea></td>
-                </tr>
-                <tr id="place">
-                  <td id="placeR">引き渡し場所<p class="hissu">必須</p></td>
-                  <td class="area"><textarea></textarea></td>
-                </tr>
-                <tr id="other">
-                  <td id="otherR">その他備考</td>
-                  <td class="area"><textarea></textarea></td>
-                </tr>
-              </tbody>
-            </table>
+                  <tr id="background">
+                    <td id="backgroundR">募集の経緯<p class="hissu">必須</p></td>
+                    <td class="area"><textarea name="background"></textarea></td>
+                  </tr>
+                  <tr id="personality">
+                    <td id="personalityR">性格・特徴<p class="hissu">必須</p></td>
+                    <td class="area"><textarea name="personality"></textarea></td>
+                  </tr>
+                  <tr id="health">
+                    <td id="healthR">健康状態<p class="hissu">必須</p></td>
+                    <td class="area"><textarea name="health"></textarea></td>
+                  </tr>
+                  <tr id="place">
+                    <td id="placeR">引き渡し場所<p class="hissu">必須</p></td>
+                    <td class="area"><textarea name="place"></textarea></td>
+                  </tr>
+                  <tr id="other">
+                    <td id="otherR">その他備考</td>
+                    <td class="area"><textarea name="other"></textarea></td>
+                  </tr>
+                </tbody>
+              </table>
 
 
-            <h3>ペットの画像</h3>
-            <div id="upload">
+              <h3>ペットの画像</h3>
+              <div id="upload">
 
-              <figure id="first">
-                <img src="images/dog.jpg">
-              </figure>
+                <figure id="first">
+                  <img src="images/dog.jpg">
+                </figure>
 
-              <figure id="second">
-                <img src="images/sima.jpg">
-              </figure>
+                <figure id="second">
+                  <img src="images/sima.jpg">
+                </figure>
 
-              <div id="info">
-                <p>アップロード可能なファイル種類・・・ jpf / png / gif</p>
-                <p>アップロード可能なファイル容量・・・ 1ファイル最大10BMBまで</p>
-                <p class="color">※推奨サイズ・・・ 縦横 730 px 以上のもの</p>
-                <p class="color">※写真にイラストは使用しないで下さい</p>
-                <p class="color">※直近３か月以内に撮影された画像を使用してください</p>
+                <div id="info">
+                  <p>アップロード可能なファイル種類・・・ jpf / png / gif</p>
+                  <p>アップロード可能なファイル容量・・・ 1ファイル最大10BMBまで</p>
+                  <p class="color">※推奨サイズ・・・ 縦横 730 px 以上のもの</p>
+                  <p class="color">※写真にイラストは使用しないで下さい</p>
+                  <p class="color">※直近３か月以内に撮影された画像を使用してください</p>
 
-                <div id="btn">
-                  <div id="file"><a href="#">ファイルを選択する</a></div>
-                  <p>選択されていません</p>
+                  <div id="btn">
+                    <div id="file"><a href="#">ファイルを選択する</a></div>
+                    <p>選択されていません</p>
+                  </div>
+
                 </div>
 
               </div>
 
-            </div>
-
-            <div id="last">
-              <div id="regi"><a href="#">登録する</a></div>
-              <div id="memo"><a href="#">下書きを保存する</a></div>
-            </div>
+              <div id="last">
+                <div id="regi"><input type="submit" value="登録する"></div>
+                <div id="memo"><input type="submit" value="下書きを保存する"></div>
+              </div>
+            </form>
 
 
 
@@ -323,7 +379,7 @@
       </div>
 
     </main>
-
+{% endblock %}
 
 
 
@@ -368,9 +424,9 @@
         <nav>
           <ul>
             <li class="nav-bold">HELP</li>
-            <li><a href="help.html">ヘルプセンター</a></li>
-            <li><a href="inquiry.html">お問い合わせ</a></li>
-            <li><a href="guid.html">ガイド</a></li>
+            <li><a href="/help">ヘルプセンター</a></li>
+            <li><a href="/inquiry">お問い合わせ</a></li>
+            <li><a href="/guid.">ガイド</a></li>
             <li><a href="#">プライバシーポリシー</a></li>
           </ul>
         </nav>
@@ -383,9 +439,9 @@
         <nav>
           <ul>
             <li class="nav-bold">SETEMAP</li>
-            <li><a href="assignment.html">譲渡会</a></li>
-            <li><a href="lost_petboard.html">迷子掲示板</a></li>
-            <li><a href="foster_board.html">里親掲示板</a></li>
+            <li><a href="/assignment">譲渡会</a></li>
+            <li><a href="/lost_petboard">迷子掲示板</a></li>
+            <li><a href="/foster_board">里親掲示板</a></li>
           </ul>
         </nav>
 
@@ -411,7 +467,8 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ebfd63cef7.js" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
-
+    {% block js %}
+    {% endblock %}
   </body>
 
 </html>
