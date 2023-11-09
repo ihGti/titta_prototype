@@ -15,13 +15,13 @@
 }
 
 /* Topページの着せ替え------------------ */
-section.index_M_sec1_1 {
+section.index_M_sec1_1{
   width: 100%;
   height: auto;
   /* background-image: url(../images/toppage_room.jpg); */
-  background-image: url(../images/toppage_room.jpg);
+  /* background-image: url(../images/toppage_room_nulu.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   margin-top: -5px;
   position: relative;
   color: #ffffff;
@@ -31,36 +31,55 @@ div#kisekaeyounoheya {
 }
 
 div#kisekaeyounoheya img {
-  width: 100vw;
+  width: 100%;
   min-width: 1400px;
   height: auto;
 }
 
-/* 迷子掲示板フレーム */
-div.index_M_sec1_di_1 {
-  width: auto;
-  height: 308px;
-  background-color: #ff634700;
+section.index_M_sec1_1 div#frefre{
+  width: 350px;
+  height: 220px;
+  background-color: #00000090;
+  box-shadow: 2px 2px 15px #c1c1c1;
+  border-top: solid 5px #fff;
+
   position: absolute;
   top: 0;
   right: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  border-radius: 0 0 0 25px;
+}
+
+/* 迷子掲示板フレーム */
+div.index_M_sec1_di_1 {
+  width: 190px;
+  height: auto;
+  background-color: #f57c6700;
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  margin-right: -10px;
 }
 
 /* 注目コンテストフレーム */
 div.index_M_sec1_di_2 {
-  width: auto;
-  height: 308px;
-  background-color: #ff634700;
-  position: absolute;
+  width: 190px;
+  height: auto;
+  background-color: #f57c6700;
+  /* position: absolute;
   top: 0;
-  right: 260px;
+  right: 210px; */
+  margin-left: -10px;
 }
 
 /* 迷子掲示板本体 */
 div.index_M_sec1_di_1_1 {
-  width: 250px;
-  height: 308px;
-  background-color: #41537d;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff00;
   float: right;
   text-align: center;
   padding: 15px 0 0 0;
@@ -68,33 +87,51 @@ div.index_M_sec1_di_1_1 {
 
 /* 注目コンテスト本体 */
 div.index_M_secc1_di_2_1 {
-  width: 250px;
-  height: 308px;
-  background-color: #41537d;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff00;
   float: left;
   text-align: center;
 }
 
 /* 迷子鳥のフレーム */
 div.index_M_sec1_di_1_1 div {
-  width: 226px;
-  height: 256px;
-  background-color: #fefeff;
-  margin: 10px auto 0 auto;
+  /* width: calc(100% - 20px); */
+  width: 100%;
+  height: auto;
+  background-color: #fefeff00;
+  margin: 5px auto 0 auto;
   text-align: center;
   color: #000;
 }
 
 /* 迷子鳥 */
 div.index_M_sec1_di_1_1 div img {
-  margin: 10px 0 20px 0;
+  /* width: 100%; */
+  width: calc(100% - 50px);
+  margin: 5px 0 10px 0;
+
+  border: solid 3px #ffffff;
+  border-radius: 10px;
 }
 
 /* コンテストタイトル */
-div.index_M_secc1_di_1,
-div.index_M_secc1_di_2 h1 {
-  font-size: 1.1rem;
-  color: #fefeff;
+div.index_M_sec1_di_1_1 h1{
+  font-size: 0.8rem;
+  color: #ffffff;
+
+  margin: -5px 0 0 0;
+}
+
+div.index_M_sec1_di_1_1 p{
+  font-size: 0.7rem;
+  font-weight: bold;
+
+  /* background-color: #ffffff; */
+  color: #ffffff;
+
+  padding: 3px;
+  margin-top: 1px;
 }
 
 /* コンテスト */
