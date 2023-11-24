@@ -171,3 +171,7 @@
 #ApplyBtn:hover{
     opacity: 0.8;
 }
+
+#ApplyBtn:active{
+    opacity: 1;
+}
